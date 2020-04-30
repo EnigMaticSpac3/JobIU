@@ -11,23 +11,3 @@ header ul, li {
     list-style-type: none;
 }
 /*starts MENU*/
-.nav-menu {
-    position: fixed;
-    width: 100%;
-}
-.nav-menu .long-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-.nav-menu .long-menu .user_options {
-    display: flex;
-}
-
-.nav-menu .long-menu a {
-    font-size: 18px;
-    font: 500;
-}
-
-/*main title*/
