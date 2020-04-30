@@ -11,3 +11,26 @@ header ul, li {
     list-style-type: none;
 }
 /*starts MENU*/
+.nav-menu {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-menu .options {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palegreen;
+    padding: 0 20px;
+}
+.nav-menu .options .more {
+    display: flex;
+}
+
+/*title config*/
+.nav-menu .options .title {
+    position: absolute;
+    background-color: palevioletred;
+    left: 50%;
+}
