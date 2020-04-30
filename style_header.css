@@ -4,12 +4,13 @@
 :root {
     --blue-main: #0C2657;
 }
+
 header a {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-    font: 600;
+    font-weight: 700;
 }
 header ul, li {
     padding: 0;
@@ -36,16 +37,32 @@ header ul, li {
 
 /*care with this padding*/
 .nav-menu .options .user-options li {
-    padding-left: 8px;
+    padding-left: 15px;
 }
 .user-options li:nth-child(2) {
-    padding-right: 8px;
+    padding-right: 15px;
 }
 
 /*line*/
 .user-options .line {
     border: 1px solid black;
-    
+}
+/*anchor config*/
+.nav-menu .options li a{
+    text-align: center;
+    padding-bottom: 3px;
+    border-bottom: 0px solid var(--blue-main);
+    transition: ease-in-out .650ms;
+}
+.nav-menu .options li:hover a{
+    border-bottom: 2px solid var(--blue-main);
+}
+.options .option-one li a{
+    border-bottom: 2px solid var(--blue-main);
+}
+
+.user-options li:nth-child(2) a {
+    color: var(--blue-main);
 }
 /*title config*/
 .nav-menu .options .title {
@@ -54,6 +71,6 @@ header ul, li {
     transform: translateX(-50%);
     text-align: center;
     font-size: 52px;
-    font-weight: 600;
+    font-weight: 900;
     color: var(--blue-main);
 }
