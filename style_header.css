@@ -20,7 +20,8 @@ header ul, li {
 .nav-menu {
     position: fixed;
     width: 100%;
-    padding: 0.5rem 0;
+    z-index: 1000;
+    top: 0;
 }
 
 .nav-menu .options {
@@ -28,8 +29,7 @@ header ul, li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    padding: 0 5rem;
+    padding: 0.5rem 5rem;
 }
 .nav-menu .options .user-options {
     display: flex;
