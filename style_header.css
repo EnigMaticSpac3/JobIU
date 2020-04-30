@@ -36,7 +36,10 @@ header ul, li {
 
 /*care with this padding*/
 .nav-menu .options .user-options li {
-    padding: 0 5px;
+    padding-left: 8px;
+}
+.user-options li:nth-child(2) {
+    padding-right: 8px;
 }
 
 /*line*/
