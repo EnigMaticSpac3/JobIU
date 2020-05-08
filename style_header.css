@@ -29,6 +29,10 @@ ul, li {
 .user-options.open {
     display: block;
 }
+/*Toggle MEnu*/
+.toggle-menu {
+    
+}
 
 /*Title*/
 .options .title {
@@ -96,9 +100,9 @@ ul, li {
     
     .user-options li:nth-child(2) a {
         color: var(--blue-main);
-    }*/
-    /*title config*//*
-    .nav-menu .options .title {
+    }
+    /*title config*/
+    /*.nav-menu .options .title {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -106,5 +110,5 @@ ul, li {
         font-size: 52px;
         font-weight: 900;
         color: var(--blue-main);
-    }
+    }*/
 }
