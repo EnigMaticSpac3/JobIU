@@ -1,5 +1,5 @@
 /**Styles that are going to be for the header section**/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 /*colors*/
 :root {
     --blue-main: #0C2657;
@@ -14,13 +14,17 @@ ul, li {
     list-style-type: none;
     padding: 0;
 }
+
+/*Menu*/
 .nav-menu {
+    height: auto;
     width: 100%;
 }
 .nav-menu .options {
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    align-items: center;
+    padding: 0px 2rem;
 }
 /*User Options*/
 .options .user-options {
@@ -30,21 +34,27 @@ ul, li {
     display: block;
 }
 /*Toggle MEnu*/
-.toggle-menu {
-    
+
+.toggle-menu div{
+    background-color: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
 }
 
 /*Title*/
-.options .title {
-    position: absolute;
-    top: 0;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-
+.nav-menu .title {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: bold;
     color: var(--blue-main);
+    padding-top: 2rem;
+}
+
+.option-one {
+    padding: 0px;
+    margin-top: 30px;
 }
 
 @media screen and (min-width: 992px) {
