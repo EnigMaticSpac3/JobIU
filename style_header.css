@@ -1,76 +1,126 @@
 /**Styles that are going to be for the header section**/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 /*colors*/
 :root {
     --blue-main: #0C2657;
 }
-
 header a {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-    font-weight: 700;
 }
-header ul, li {
-    padding: 0;
+ul, li {
     list-style-type: none;
-}
-/*starts MENU*/
-.nav-menu {
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
+    padding: 0;
 }
 
+/*Menu*/
+.nav-menu {
+    height: auto;
+    width: 100%;
+}
 .nav-menu .options {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 5rem;
-}
-.nav-menu .options .user-options {
-    display: flex;
+    padding: 0px 2rem;
 }
 
-/*care with this padding*/
-.nav-menu .options .user-options li {
-    padding-left: 15px;
+/*User Options*/
+.options .user-options {
+    display: none;
 }
-.user-options li:nth-child(2) {
-    padding-right: 15px;
+.user-options.open {
+    display: block;
+}
+/*Toggle MEnu*/
+
+.toggle-menu div{
+    background-color: black;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
 }
 
-/*line*/
-.user-options .line {
-    border: 1px solid black;
-}
-/*anchor config*/
-.nav-menu .options li a{
+/*Title*/
+.nav-menu .title {
     text-align: center;
-    padding-bottom: 3px;
-    border-bottom: 0px solid var(--blue-main);
-    transition: ease-in-out .650ms;
-}
-.nav-menu .options li:hover a{
-    border-bottom: 2px solid var(--blue-main);
-}
-.options .option-one li a{
-    border-bottom: 2px solid var(--blue-main);
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--blue-main);
+    padding-top: 2rem;
 }
 
-.user-options li:nth-child(2) a {
-    color: var(--blue-main);
+.option-one {
+    padding: 0px;
+    margin-top: 30px;
+    border-bottom: 3px solid var(--blue-main);
 }
-/*title config*/
-.nav-menu .options .title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    font-size: 52px;
-    font-weight: 900;
-    color: var(--blue-main);
+
+@media screen and (min-width: 992px) {
+    header a {
+        
+        font-weight: 700;
+    }
+    
+    /*starts MENU*//*
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        top: 0;
+    }
+    
+    .nav-menu .options {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 5rem;
+    }
+    .nav-menu .options .user-options {
+        display: flex;
+    }*/
+    
+    /*care with this padding*//*
+    .nav-menu .options .user-options li {
+        padding-left: 15px;
+    }
+    .user-options li:nth-child(2) {
+        padding-right: 15px;
+    }
+    
+    /*line*//*
+    .user-options .line {
+        border: 1px solid black;
+    }*/
+    /*anchor config*//*
+    .nav-menu .options li a{
+        text-align: center;
+        padding-bottom: 3px;
+        border-bottom: 0px solid var(--blue-main);
+        transition: ease-in-out .650ms;
+    }
+    .nav-menu .options li:hover a{
+        border-bottom: 2px solid var(--blue-main);
+    }
+    .options .option-one li a{
+        border-bottom: 2px solid var(--blue-main);
+    }
+    
+    .user-options li:nth-child(2) a {
+        color: var(--blue-main);
+    }
+    /*title config*/
+    /*.nav-menu .options .title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 52px;
+        font-weight: 900;
+        color: var(--blue-main);
+    }*/
 }
