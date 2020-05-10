@@ -1,5 +1,8 @@
 
+/*Esta parte es para móviles*/
+
 main {
+    width: 100%;
     height: 150vh;
 }
 
@@ -13,6 +16,14 @@ main {
     width: 100%;
     
 }
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border blac
+}
+
 
 /* .buscador{
     background-image: linear-gradient(to bottom right, red, turquoise);
