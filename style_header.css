@@ -56,6 +56,7 @@ ul, li {
 .option-one {
     padding: 0px;
     margin-top: 30px;
+    border-bottom: 3px solid var(--blue-main);
 }
 
 @media screen and (min-width: 992px) {

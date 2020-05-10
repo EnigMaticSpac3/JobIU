@@ -1,6 +1,9 @@
 
 /*Esta parte es para móviles*/
-
+:root {
+    --blue-main: #0c2657;
+    --blue-sky: #00BDC3;
+}
 main {
     width: 100%;
     height: 150vh;
@@ -18,10 +21,26 @@ main {
 }
 
 .buscador{
+    height: 115px;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border blac
+    flex-direction: column;
+   
+}
+
+
+.buscador_design  {
+    background-color: transparent;
+    border: 3px solid var(--blue-sky);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*estilos para el buscador*/
+.buscador_design:placeholder-shown{
+    border-color:black;
 }
 
 
