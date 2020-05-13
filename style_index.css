@@ -26,7 +26,6 @@ main {
     align-items: center;
 }
 .search-container .label_design {
-    border: 2px solid black;
     position: relative;
 }
 
@@ -35,7 +34,7 @@ main {
     width: 20px;
     top: 50%;
     right: 0;
-    transform: translate(-25%, -50%); /*interesting*/
+    transform: translate(-50%, -50%); /*interesting*/
 }
 
 .search-container .buscador_design  {
