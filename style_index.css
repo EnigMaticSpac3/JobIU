@@ -25,13 +25,24 @@ main {
     text-align: center;
     align-items: center;
 }
+.search-container .label_design {
+    border: 2px solid black;
+    position: relative;
+}
 
+.search-container .label_design .search-icon {
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    right: 0;
+    transform: translate(-25%, -50%); /*interesting*/
+}
 
 .search-container .buscador_design  {
     background-color: transparent;
-    border: 1px solid var(--blue-sky);
+    border: 2.3px solid var(--blue-sky);
     border-radius: 5px;
-    padding: 7px;
+    padding: 7px 15px;
     margin: 20px auto;
 }
 

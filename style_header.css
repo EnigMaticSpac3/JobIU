@@ -1,6 +1,11 @@
 /**Styles that are going to be for the header section**/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 /*colors*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root {
     --blue-main: #0C2657;
 }
