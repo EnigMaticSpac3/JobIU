@@ -2,3 +2,5 @@
 const SelectElement = (element) => document.querySelector(element);
 //Open the menu
 SelectElement()
+
+

@@ -19,24 +19,32 @@ main {
     width: 100%;
     
 }
-
-.buscador{
-    height: 115px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+/*Searching the JOb*/
+.search-container {
+    padding: 1rem;
+    text-align: center;
     align-items: center;
-    flex-direction: column;
-   
+}
+.search-container .label_design {
+    position: relative;
 }
 
+.search-container .label_design .search-icon {
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%); /*interesting*/
+}
 
-.buscador_design  {
+.search-container .buscador_design  {
     background-color: transparent;
-    border: 3px solid var(--blue-sky);
-    border-radius: 10px;
-    padding: 10px;
+    border: 2.3px solid var(--blue-sky);
+    border-radius: 5px;
+    padding: 7px 15px;
+    margin: 20px auto;
 }
+
 
 /*estilos para el buscador*/
 .buscador_design:placeholder-shown{
