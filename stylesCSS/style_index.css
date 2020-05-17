@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
 
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
 /*Esta parte es para móviles*/
 :root {
     --blue-main: #0c2657;
@@ -6,16 +10,15 @@
 }
 main {
     width: 100%;
-    height: 150vh;
 }
 
 .back-container {
     margin: auto;
-    background-image: linear-gradient(20deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .7)), url('img/background.jpg');
+    background-image: linear-gradient(20deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .7)), url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 74vh;
+    height: 65vh;
     width: 100%;
     
 }
@@ -31,10 +34,10 @@ main {
 
 .search-container .label_design .search-icon {
     position: absolute;
-    width: 20px;
+    width: 16px;
     top: 50%;
     right: 0;
-    transform: translate(-50%, -50%); /*interesting*/
+    transform: translate(-50%, -45%); /*interesting*/
 }
 
 .search-container .buscador_design  {
@@ -45,23 +48,27 @@ main {
     margin: 20px auto;
 }
 
-
-/*estilos para el buscador*/
+/*estilos para los input*/
 .buscador_design:placeholder-shown{
     border-color:black;
 }
 
 
-/* .buscador{
-    background-image: linear-gradient(to bottom right, red, turquoise);
-        color: white;
-        width: 200px;
-        height: 100px;
-        border: none;
-        border-radius: 15px;
-        display: flex;
-        align-self: center;
-        margin: 0 auto;
-        justify-content: center;
-        padding: 5em;
-} */
+/*modifying the search button*/
+.search-button {
+    padding-top: 2rem;
+}
+.search-button button{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: medium;
+    background-color: var(--blue-sky);
+}
+
+/** Here Starts the Search-Section **/
+.recent-searches {
+    padding: 2rem;
+}
