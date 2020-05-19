@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-
+/*general txt*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 body {
     font-family: 'Roboto', 'sans-serif';
 }
@@ -18,21 +19,22 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 65vh;
+    height: 60vh;
     width: 100%;
     
 }
 /*Searching the JOb*/
 .search-container {
+    font-family: 'Roboto', 'sans-serif';
     padding: 1rem;
     text-align: center;
     align-items: center;
 }
-.search-container .label_design {
+.search-container label {
     position: relative;
 }
 
-.search-container .label_design .search-icon {
+.search-container label .search-icon {
     position: absolute;
     width: 16px;
     top: 50%;
@@ -46,6 +48,7 @@ main {
     border-radius: 5px;
     padding: 7px 15px;
     margin: 20px auto;
+    outline: none; /*para quitarle la linea al cuadro*/
 }
 
 /*estilos para los input*/
@@ -66,9 +69,20 @@ main {
     font-weight: 700;
     font-size: medium;
     background-color: var(--blue-sky);
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.search-button button:hover {
+    border: 3px solid var(--blue-sky);
+    background-color: #fff;
 }
 
 /** Here Starts the Search-Section **/
 .recent-searches {
-    padding: 2rem;
+    font-family: 'Lato', sans-serif;
+    padding-top: 2rem;
+    text-align: center;
+}
+.recent-searches h2 {
+    font-size: 30px;
 }

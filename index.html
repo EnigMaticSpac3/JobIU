@@ -6,11 +6,11 @@
     <title>JobIU-Find your Job</title>
 
     <!-- Links -->
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="stylesCSS/normalize.css">
     <link rel="shortcut icon" href="img/JobIUfavicon.png" type="image/x-icon">
     <link rel="stylesheet" href="stylesCSS/style_header.css">
     <link rel="stylesheet" href="stylesCSS/style_index.css" >
-    
+    <script src="https://kit.fontawesome.com/b3ff63caad.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="back-container">
@@ -24,11 +24,10 @@
                     <div class="toggle-menu">
                         <div class="menu-icon"></div>
                     </div>
-                    <ul class="user-options">
-                        <li><a href="#">Upload CV</a></li>
-                        <li><a href="#">Sign In</a></li>
-                        <div class="line"></div>
-                        <li><a href="#">Post Jobs</a></li>
+                    <ul class="user-options-compu">
+                        <li><a href="#" class="color">Upload CV</a></li>
+                        <li><a href="#" class="color">Sign In</a></li>
+                        <li><a href="#" class="color">Post Jobs</a></li>
                     </ul>
                 </div>
             </nav>
@@ -36,30 +35,43 @@
     
     
         <main>
-            <form class="search-container" action="index.html" method="POST">
-                <label for="search_job" class="label_design">
-                    <input type="text" placeholder="Job (company or job)" class="buscador_design"> 
+            <!-- Form automated with rec_searches.js -->
+            <form class="search-container" for="s_job" action="rec_searches.js">
+                <label for="search_job">
+                    <input id="s_job" type="search" placeholder="Job (company or job)" class="buscador_design"> 
                     <img class="search-icon" src="img/icons/searchicon.svg" alt="*">
                 </label>
                 <!-- <br> -->
-                <label for="searchCountry" class="label_design">
-                    <input type="text" placeholder="Country or City" class="buscador_design">
+                <label for="searchCountry">
+                    <input id="searchCountry" type="text" placeholder="Country or City" class="buscador_design">
                     <img class="search-icon" src="img/icons/location.svg" alt="*">
                 </label>
 
                 <div class="search-button">
-                    <button type="submit">Search</button>
+                    <button id="btn" type="submit">Search</button>
                 </div>
             </form>
+            <ul class="user-options-phone">
+                <li><a href="#">Upload CV</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Post Jobs</a></li>
+            </ul>
         </main>
         <section class="recent-searches">
             <h2>Recent Searches</h2>
+            <!-- This list needs to be automated with the recent searches -->
+            <ul id="" class="recents-list">
+                <li class="searches-container">
+                    <i class="far fa-star"></i>
+                    <i class="fas fa-trash-alt"></i>
+                </li>
+            </ul>
 
         </section>        
     </div>
 
         
-        
+    <script src="rec_searches.js"></script>
     <script src="header.js"></script>
 </body>
 </html>

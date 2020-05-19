@@ -33,11 +33,25 @@ ul, li {
 }
 
 /*User Options*/
-.options .user-options {
+.options .user-options-compu {
     display: none;
 }
 .user-options.open {
     display: block;
+}
+.user-options-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.user-options-phone li a {
+    flex: 1;
+    display: block;
+    text-decoration: none;
+    color: skyblue; 
+    padding: 15px 30px;
 }
 /*Toggle MEnu*/
 
@@ -55,13 +69,17 @@ ul, li {
     font-size: 30px;
     font-weight: bold;
     color: var(--blue-main);
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .option-one {
     padding: 0px;
     margin-top: 30px;
     border-bottom: 3px solid var(--blue-main);
+}
+.option-one-s{
+    margin-top: 30px;
+    margin-left: 50em;
 }
 
 @media screen and (min-width: 992px) {
