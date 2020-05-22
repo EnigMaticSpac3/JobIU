@@ -36,22 +36,20 @@ ul, li {
 .options .user-options-compu {
     display: none;
 }
-.user-options.open {
+/* .user-options.open {
     display: block;
+} */
+.user-options-phone {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.user-options-phone{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-.user-options-phone li a {
-    flex: 1;
-    display: block;
+.user-options-phone a {
     text-decoration: none;
-    color: skyblue; 
-    padding: 15px 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: var(--blue-main);
+    padding: 10px;
 }
 /*Toggle MEnu*/
 
