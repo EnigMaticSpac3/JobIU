@@ -3,4 +3,4 @@ In this repository we will learn about how to use github and at the same time we
 
 Ehm.. That's all
 
-In order to you to have access to it in your own CodeEditor, clone the files to your Desktop
+In order for you to have access to it in your own CodeEditor, "clone" the files to your Desktop
