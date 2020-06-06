@@ -1,4 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+/*general txt*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
 /*Esta parte es para móviles*/
 :root {
     --blue-main: #0c2657;
@@ -6,35 +11,35 @@
 }
 main {
     width: 100%;
-    height: 150vh;
 }
 
 .back-container {
     margin: auto;
-    background-image: linear-gradient(20deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .7)), url('img/background.jpg');
+    background-image: linear-gradient(20deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .7)), url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 74vh;
+    height: 60vh;
     width: 100%;
     
 }
 /*Searching the JOb*/
 .search-container {
+    font-family: 'Roboto', 'sans-serif';
     padding: 1rem;
     text-align: center;
     align-items: center;
 }
-.search-container .label_design {
+.search-container label {
     position: relative;
 }
 
-.search-container .label_design .search-icon {
+.search-container label .search-icon {
     position: absolute;
-    width: 20px;
+    width: 16px;
     top: 50%;
     right: 0;
-    transform: translate(-50%, -50%); /*interesting*/
+    transform: translate(-50%, -45%); /*interesting*/
 }
 
 .search-container .buscador_design  {
@@ -43,25 +48,62 @@ main {
     border-radius: 5px;
     padding: 7px 15px;
     margin: 20px auto;
+    outline: none; /*para quitarle la linea al cuadro*/
 }
 
-
-/*estilos para el buscador*/
+/*estilos para los input*/
 .buscador_design:placeholder-shown{
     border-color:black;
 }
 
 
-/* .buscador{
-    background-image: linear-gradient(to bottom right, red, turquoise);
-        color: white;
-        width: 200px;
-        height: 100px;
-        border: none;
-        border-radius: 15px;
-        display: flex;
-        align-self: center;
-        margin: 0 auto;
-        justify-content: center;
-        padding: 5em;
-} */
+/*modifying the search button*/
+.search-button {
+    padding-top: 2rem;
+}
+.search-button button{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: medium;
+    background-color: var(--blue-sky);
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.search-button button:hover {
+    border: 3px solid var(--blue-sky);
+    background-color: #fff;
+}
+
+/** Here Starts the recent searches-Section **/
+
+.recent-searches {
+    font-family: 'Lato', sans-serif;
+    padding-top: 4rem;
+    text-align: center;
+    /*ahora si aparece, continúa*/
+}
+.recent-searches h2 {
+    font-size: 30px;
+}
+.imgdestacado{
+    /* width: 50em;
+    height: 35em; */
+    width: 50px;
+    height: 80px;
+    border: 5px solid var(--blue-sky);
+}
+
+.hdestacado{
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+   border: 2px solid black;
+   font-size: 30px;
+}
+
+
+
+
