@@ -15,33 +15,33 @@
 <body>
     <div class="back-container">
         <header>
-            <nav class="nav-menu">
-                <div class="title"><a href="#">JobIU</a></div>
-                <div class="options">
-                    <ul class="option-one">
-                        <li><a href="#">Finding Job</a></li>
-                    </ul>
-                    <div class="toggle-menu">
-                        <div class="menu-icon"></div>
-                    </div>
-                    <ul class="user-options-compu">
-                        <li><a href="#" class="color">Upload CV</a></li>
-                        <li><a href="#" class="color">Sign In</a></li>
-                        <li><a href="#" class="color">Post Jobs</a></li>
-                    </ul>
+            <div class="title">
+                <a href="#">JobIU</a>
+            </div>
+            
+            <nav class="nav-menu"> 
+                <div class="search-section-btn">
+                    <a href="#">Encuentra tu empleo</a>
                 </div>
+                <ul>
+                    <li><a href="#">Subir CV</a></li>
+                    <li class="sign-btn">
+                        <a href="#">Iniciar Sesión</a>
+                    </li>
+                    <li><a href="#">Empresas/Publicar</a></li>
+                </ul>
             </nav>
         </header>
     
     
         <main>
-            <!-- Form automated with rec_searches.js -->
+             <!-- Form automated with rec_searches.js  -->
             <form class="search-container" for="s_job" action="rec_searches.js">
                 <label for="search_job">
-                    <input id="s_job" type="search" placeholder="Job (company or job)" class="buscador_design"> 
+                    <input id="s_job" type="text" placeholder="Job (company or job)" class="buscador_design"> 
                     <img class="search-icon" src="img/icons/searchicon.svg" alt="*">
                 </label>
-                <!-- <br> -->
+                
                 <label for="searchCountry">
                     <input id="searchCountry" type="text" placeholder="Country or City" class="buscador_design">
                     <img class="search-icon" src="img/icons/location.svg" alt="*">
@@ -51,26 +51,13 @@
                     <button id="btn" type="submit">Search</button>
                 </div>
             </form>
-            <ul class="user-options-phone">
-                <a><li>Upload CV</li></a>
-                <a href="#"><li>Sign In</li></a>
-                <a href="#"><li>Post Jobs</li></a>
-            </ul>
+            
         </main>
         <!-- Inicia la sección de Busquedas recientes -->
         <section class="recent-searches">
-            <h2 class="hdestacado">Recent Searches</h2>
-            
-            <img src="img/background.jpg" alt="" class="imgdestacado">
-            <!-- arreglo el tamaño de la img -->
-            <!-- lo voy a hacer -->
-            <!-- This list needs to be automated with the recent searches -->
-            <ul id="#" class="recents-list">
-                <li class="searches-container">
                     <i class="far fa-star"></i>
                     <i class="fas fa-trash-alt"></i>
-                </li>
-            </ul>
+                
 
         </section>        
     </div>
@@ -80,6 +67,5 @@
 
         
     <script src="rec_searches.js"></script>
-    <script src="header.js"></script>
 </body>
 </html>
