@@ -43,7 +43,7 @@ header a {
     align-items: center;
     justify-content: space-between;
     right: 0;
-    padding: 4em 1em;
+    padding: 4em 1em 1.5em;
 }
 /*just showing the SignIn BTN*/
 .nav-menu ul li:nth-child(1), li:nth-last-child(1) {

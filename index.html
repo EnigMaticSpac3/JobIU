@@ -37,15 +37,18 @@
         <main>
              <!-- Form automated with rec_searches.js  -->
             <form class="search-container" for="s_job" action="rec_searches.js">
-                <label for="search_job">
-                    <input id="s_job" type="text" placeholder="Job (company or job)" class="buscador_design"> 
-                    <img class="search-icon" src="img/icons/searchicon.svg" alt="*">
-                </label>
+                <div class="search-labels">
+                    <label for="search_job">
+                        <input id="s_job" type="text" placeholder="Job (company or job)" class="buscador_design"> 
+                        <img class="search-icon" src="img/icons/searchicon.svg" alt="*">
+                    </label>
+                    
+                    <label for="searchCountry">
+                        <input id="searchCountry" type="text" placeholder="Country or City" class="buscador_design">
+                        <img class="search-icon" src="img/icons/location.svg" alt="*">
+                    </label>
+                </div>
                 
-                <label for="searchCountry">
-                    <input id="searchCountry" type="text" placeholder="Country or City" class="buscador_design">
-                    <img class="search-icon" src="img/icons/location.svg" alt="*">
-                </label>
 
                 <div class="search-button">
                     <button id="btn" type="submit">Search</button>
@@ -53,15 +56,57 @@
             </form>
             
         </main>
-        <!-- Inicia la sección de Busquedas recientes -->
-        <section class="recent-searches">
-                    <i class="far fa-star"></i>
-                    <i class="fas fa-trash-alt"></i>
-                
-
-        </section>        
     </div>
 
+    <!-- Most Searched Jobs -->
+    <section class="most-searched-jobs">
+        <h2>Más Buscados</h2>
+        <div class="container">
+            <div class="item">
+                <a href="#">Contabilidad...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Marketing...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Logística...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Administrador de empresas...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Turismo...</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Inicia la sección de Busquedas recientes -->
+    <section class="recent-searches">
+                <i class="far fa-star"></i>
+                <i class="fas fa-trash-alt"></i>
+            
+    </section>        
+
+    <section class="pruebas">
+        <div>
+            <h2>
+                <a href="./Testing/prueba.html">Página de Pruebas</a>
+            </h2>
+        </div>
+    </section>
 
 
 

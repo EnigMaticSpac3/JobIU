@@ -2,12 +2,14 @@
 /*general txt*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 body {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: var(--font1);
 }
 /*Esta parte es para móviles*/
 :root {
     --blue-main: #0c2657;
     --blue-sky: #00BDC3;
+    --font1: 'Roboto', sans-serif;
+    --font2: 'Lato', sans-serif;
 }
 main {
     width: 100%;
@@ -19,17 +21,24 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 65vh;
     width: 100%;
     
 }
 /*Searching the JOb*/
 .search-container {
-    font-family: 'Roboto', 'sans-serif';
+    font-family: var(--font1);
     padding: 1rem;
     text-align: center;
+}
+/*Searching Labels*/
+.search-container .search-labels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
+
 .search-container label {
     position: relative;
 }
@@ -39,14 +48,16 @@ main {
     width: 16px;
     top: 50%;
     right: 0;
-    transform: translate(-50%, -45%); /*interesting*/
+    
+    transform: translate(-100%, -45%); /*interesting*/
 }
 
 .search-container .buscador_design  {
+    width: 100%;
     background-color: transparent;
     border: 2.3px solid var(--blue-sky);
-    border-radius: 5px;
-    padding: 7px 15px;
+    border-radius: 15px;
+    padding: 10px 40px;
     margin: 20px auto;
     outline: none; /*para quitarle la linea al cuadro*/
 }
@@ -80,7 +91,7 @@ main {
 /** Here Starts the recent searches-Section **/
 
 .recent-searches {
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font2);
     padding-top: 4rem;
     text-align: center;
     /*ahora si aparece, continúa*/
@@ -104,6 +115,65 @@ main {
    font-size: 30px;
 }
 
+/** Most Searched Jobs Section! **/
+/*Magical Stuff*/
 
+.most-searched-jobs {
+    width: 100%;
+    text-align: center;
+    padding: 4em 1em 2em;
+}
 
+.most-searched-jobs .container {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 1.5em;
+}
 
+.container .item {
+    flex: auto;
+    text-align: center; 
+    padding: .5em 0;
+    font-size: 1.2em;
+}
+.container .item a {
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.container .item:nth-child(2n+1) a {
+    background-color: #112233;
+    color: azure;
+}
+.container .item:nth-child(4n+1) a {
+    background-color: #00BDC3;
+    color: azure;
+}
+
+/*Point Between*/
+.container .between {
+    flex: auto;
+    padding: 0 1%;
+    font-size: .7em;
+}
+.container .between:nth-child(2n+2) {
+    color: #112233;
+}
+.container .between:nth-child(4n+2) {
+    color: #00BDC3;
+}
+/*Página de Prubas*/
+.pruebas {
+    text-align: center;
+}
+.pruebas h2 {
+    transition: all .2s ease-in-out;
+    padding: 2em;
+}
+.pruebas h2:hover {
+    transform: scale(1.1);
+    color: tomato;
+}
