@@ -20,6 +20,10 @@ ul, li {
 }
 /*Menu*/
 /*Titulo*/
+header {
+    width: 100%;
+    position: relative;
+}
 header .title { 
     position: absolute;
     top: 1.3em;
@@ -46,7 +50,7 @@ header a {
     padding: 4em 1em 1.5em;
 }
 /*just showing the SignIn BTN*/
-.nav-menu ul li:nth-child(1), li:nth-last-child(1) {
+.nav-menu ul li:nth-child(1), .nav-menu ul li:nth-last-child(1) {
     display: none;
 }
 

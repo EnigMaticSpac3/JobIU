@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
-/*general txt*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-body {
-    font-family: var(--font1);
-}
 /*Esta parte es para móviles*/
 :root {
     --blue-main: #0c2657;
@@ -11,8 +6,9 @@ body {
     --font1: 'Roboto', sans-serif;
     --font2: 'Lato', sans-serif;
 }
-main {
-    width: 100%;
+/*general txt*/
+body {
+    font-family: var(--font1);
 }
 
 .back-container {
@@ -21,9 +17,14 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 65vh;
+    /* height: 4em; */
     width: 100%;
     
+} 
+main {
+    width: 100%;
+    position: relative;
+    /* background-color: brown; */
 }
 /*Searching the JOb*/
 .search-container {
@@ -55,7 +56,7 @@ main {
 .search-container .buscador_design  {
     width: 100%;
     background-color: transparent;
-    border: 2.3px solid var(--blue-sky);
+    border: 2.3px solid black;
     border-radius: 15px;
     padding: 10px 40px;
     margin: 20px auto;
@@ -63,14 +64,14 @@ main {
 }
 
 /*estilos para los input*/
-.buscador_design:placeholder-shown{
-    border-color:black;
+.buscador_design:focus {
+    border-color:var(--blue-sky);
 }
 
 
 /*modifying the search button*/
 .search-button {
-    padding-top: 2rem;
+    padding-top: 1.2rem;
 }
 .search-button button{
     height: 80px;
@@ -81,39 +82,14 @@ main {
     font-size: medium;
     background-color: var(--blue-sky);
     cursor: pointer;
-    transition: all .2s ease-in;
+    transition: all .2s ease-in-out;
 }
 .search-button button:hover {
     border: 3px solid var(--blue-sky);
     background-color: #fff;
 }
 
-/** Here Starts the recent searches-Section **/
 
-.recent-searches {
-    font-family: var(--font2);
-    padding-top: 4rem;
-    text-align: center;
-    /*ahora si aparece, continúa*/
-}
-.recent-searches h2 {
-    font-size: 30px;
-}
-.imgdestacado{
-    /* width: 50em;
-    height: 35em; */
-    width: 50px;
-    height: 80px;
-    border: 5px solid var(--blue-sky);
-}
-
-.hdestacado{
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-   border: 2px solid black;
-   font-size: 30px;
-}
 
 /** Most Searched Jobs Section! **/
 /*Magical Stuff*/
@@ -122,6 +98,10 @@ main {
     width: 100%;
     text-align: center;
     padding: 4em 1em 2em;
+}
+.most-searched-jobs h2 {
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
 .most-searched-jobs .container {
@@ -143,20 +123,27 @@ main {
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 20px;
+    transition: all .24s ease-out;
 }
 .container .item:nth-child(2n+1) a {
-    background-color: #112233;
+    background-color: var(--blue-main);
     color: azure;
 }
 .container .item:nth-child(4n+1) a {
-    background-color: #00BDC3;
+    background-color: var(--blue-sky);
     color: azure;
+}
+
+.container .item a:hover {
+    padding: 10px 20px;
+    background-image: linear-gradient(90deg, var(--blue-main), var(--blue-sky));
 }
 
 /*Point Between*/
 .container .between {
+    display: none;
     flex: auto;
-    padding: 0 1%;
+    padding: 0 .7%;
     font-size: .7em;
 }
 .container .between:nth-child(2n+2) {
@@ -165,13 +152,88 @@ main {
 .container .between:nth-child(4n+2) {
     color: #00BDC3;
 }
+
+/** Here Starts the recent searches-Section **/
+.recent-searches {
+    font-family: var(--font2);
+    padding-top: 4rem;
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+.recent-searches h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.container_recent-searches {
+    padding: 0 auto;
+    background-image: linear-gradient(rgba(0,0,0, .05), rgba(0,0,0, .05)),
+    url("../img/background4recent.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 300px;
+}
+.container_recent-searches .searches li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 1em;
+    transition: all .3s ease-out;
+}
+/*hover in List*/
+.container_recent-searches .searches li:hover {
+    box-shadow: 10px 15px 20px rgba(0,0,0, .5);
+}
+
+/*text2Upper*/
+.container_recent-searches .searches li a {
+    font-size: 1.24em;
+    text-decoration: underline;
+}
+
+/*** Info4All Section ***/
+.info4all {
+    text-align: center;
+}
+/* Info4People */
+.info4people h2 {
+    background-color: var(--blue-sky);
+    color: var(--blue-main);
+    font-weight: 700;
+    padding: .5em;
+}
+.info4people h2 span {
+    font-weight: normal;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Página de Prubas*/
 .pruebas {
     text-align: center;
 }
 .pruebas h2 {
     transition: all .2s ease-in-out;
-    padding: 2em;
+    padding: 0 2em;
 }
 .pruebas h2:hover {
     transform: scale(1.1);
