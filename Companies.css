@@ -1,13 +1,18 @@
-body{
-
-    background-color: cadetblue;
-     
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+/*esto no lo tenías*/
 
-
-    
-
+.background {
+    /* height: 70vh; */
+    background-image: linear-gradient(rgba(255,255,255, .05), rgba(255,255,255, .05)),
+    url("./img/main-page/background.jpg");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
 h1{
     
     color: black;
@@ -207,36 +212,3 @@ h2{
     visibility: visible;
 }
 
-/* @media only screen and (max-width: 768px){
-    #toggle{
-        
-    }
-    
-    .menu{
-        position: absolute;
-        right: 0;
-        margin-top: 0;
-        z-index: 5;
-        list-style: none;
-        display: block;
-        visibility: collapse;
-    }
-    
-    .menu-item{
-        text-align: right;
-        padding-bottom: 1px;
-        border-bottom: 2px solid aqua;
-        display: block;
-    }
-    
-    .menu-item a{
-        text-decoration: none;
-        color: white;
-    }
-
-    #toogle:checked  ~ * .menu{
-        visibility: visible;
-        
-    } */
-
-}
