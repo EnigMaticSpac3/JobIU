@@ -316,6 +316,25 @@ Página de Prubas
 
 /**/
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
+    .back-container {
+        padding: 0 3em;
+    }
+    
+    .search-container .search-labels {
+        padding: 4em;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
 
+    /*Input design*/
+    .search-container .buscador_design {
+        border: 1.5px solid black;
+        margin-right: 120px;
+        font-weight: 600;
+        font-family: var(--font2);
+    }
+    .buscador_design:focus {
+        border-color: var(--blue-sky);
+    }
 }
