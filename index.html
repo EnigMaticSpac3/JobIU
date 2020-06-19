@@ -36,10 +36,11 @@
     
         <main>
              <!-- Form automated with rec_searches.js  -->
-            <form class="search-container" for="s_job" action="rec_searches.js">
+            <form class="search-container" for="s_job" action="">
                 <div class="search-labels">
                     <label for="search_job">
-                        <input id="s_job" type="text" placeholder="Job (company or job)" class="buscador_design"> 
+                        <input id="s_job" type="text" 
+                        placeholder="Job (company or job)" class="buscador_design"> 
                         <img class="search-icon" src="img/icons/searchicon.svg" alt="*">
                     </label>
                     
@@ -61,11 +62,13 @@
             
         </main>
     </div>
+
 <br><br><br>
+
     <!-- Most Searched Jobs -->
     <section class="most-searched-jobs">
-        <h2>Más Buscados</h2>
-        <div class="container">
+        <h2 class="subtitles">Más Buscados</h2>
+        <div class="most-searched-jobs_container">
             <div class="item">
                 <a href="#">Contabilidad...</a>
             </div>
@@ -111,8 +114,8 @@
 
     <!-- Inicia la sección de Busquedas recientes -->
     <section class="recent-searches">
-        <h2>Búsquedas Recientes</h2>
-        <div class="container_recent-searches">
+        <h2 class="subtitles">Búsquedas Recientes</h2>
+        <div class="recent-searches_container">
             <!-- Modificar con JS -->
             <ul class="searches">
                 <li>
@@ -168,16 +171,6 @@
                     es lo que necesita
                 </h2>
     </section>
-
-    <!-- Pagina para Pruebas -->
-    <!-- <section class="pruebas">
-        <div>
-            <h2>
-                <a href="./Testing/prueba.html">Página de Pruebas</a>
-            </h2>
-        </div>
-    </section> -->
-
 
 
     <footer>
