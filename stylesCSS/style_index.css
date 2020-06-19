@@ -341,16 +341,19 @@ footer .copright {
         margin-right: 120px;
         font-weight: 600;
         font-family: var(--font2);
+        font-size: 1.2em;
     }
     .buscador_design:focus {
         border-color: var(--blue-sky);
     }
     
     /*Most Searched Jobs are good*/
-
+    .most-searched-jobs {
+        padding: 2em 1em;
+    }
     /*Recent Searches*/
     .recent-searches_container {
-        padding: 5em 5em;
+        padding: 5em 5.3em;
         height: 500px;
         background-attachment: fixed;
     }
