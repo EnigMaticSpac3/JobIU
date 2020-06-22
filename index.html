@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,20 +36,25 @@
     
         <main>
              <!-- Form automated with rec_searches.js  -->
-            <form class="search-container" for="s_job" action="rec_searches.js">
+            <form class="search-container" for="s_job" action="">
                 <div class="search-labels">
                     <label for="search_job">
-                        <input id="s_job" type="text" placeholder="Job (company or job)" class="buscador_design"> 
+                        <input id="s_job" type="text" 
+                        placeholder="Job (company or job)" class="buscador_design"> 
                         <img class="search-icon" src="img/icons/searchicon.svg" alt="*">
                     </label>
                     
                     <label for="searchCountry">
-                        <input id="searchCountry" type="text" placeholder="Country or City" class="buscador_design">
+                        <input 
+                        id="searchCountry" 
+                        type="text" 
+                        placeholder="Country or City"
+                        value="Panamá, Ciudad de Panamá"
+                        class="buscador_design">
                         <img class="search-icon" src="img/icons/location.svg" alt="*">
                     </label>
                 </div>
                 
-
                 <div class="search-button">
                     <button id="btn" type="submit">Search</button>
                 </div>
@@ -58,10 +63,12 @@
         </main>
     </div>
 
+<br><br><br>
+
     <!-- Most Searched Jobs -->
     <section class="most-searched-jobs">
-        <h2>Más Buscados</h2>
-        <div class="container">
+        <h2 class="subtitles">Más Buscados</h2>
+        <div class="most-searched-jobs_container">
             <div class="item">
                 <a href="#">Contabilidad...</a>
             </div>
@@ -89,28 +96,94 @@
             <div class="item">
                 <a href="#">Turismo...</a>
             </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Remoto...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">TeleTrabajo...</a>
+            </div>
         </div>
-        
     </section>
+    <!-- Ends Most Searched Jobs -->
 
     <!-- Inicia la sección de Busquedas recientes -->
     <section class="recent-searches">
-                <i class="far fa-star"></i>
-                <i class="fas fa-trash-alt"></i>
-            
-    </section>        
-
-    <section class="pruebas">
-        <div>
-            <h2>
-                <a href="./Testing/prueba.html">Página de Pruebas</a>
-            </h2>
+        <h2 class="subtitles">Búsquedas Recientes</h2>
+        <div class="recent-searches_container">
+            <!-- Modificar con JS -->
+            <ul class="searches">
+                <li>
+                    <a href="#">Manager</a>
+                    <div class="option-icons">
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Gerente</a>
+                    <div class="option-icons">
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Analista</a>
+                    <div class="option-icons">
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                
+            </ul>
         </div>
+    </section>  
+    <br><br>
+    <section class="info4all">
+        <article class="info4people">
+            <h2 class="tiny-title">
+                <a href="#">¿<span>Por qué</span> JobIU?</a>
+            </h2>
+            <p class="info-best-place">
+                El mejor lugar para encontrar <span>tu</span> empleo
+            </p>
+            <p class="info-sign-in">
+                <a href="#">Inicie Sesión</a>
+            </p>
+            <p>
+                y suba su CV
+            </p>
+        </article>
+        <article class="info4business">
+            <p>
+                ¿Busca a sus próximos <span>candidatos?</span>
+            </p>
+            <a href="./JobIUforcompanies.html">
+                <img src="./img/main-page/JobIU4Companies.svg" alt="JobIU - For Companies" class="jobiu4companies-image">
+            </a>
+        </article>
+                <h2 class="tiny-title tiny-title2">
+                    es lo que necesita
+                </h2>
     </section>
 
 
-
-        
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="#">JobIU</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contáctenos</a></li>
+        </ul>
+        <div class="divisor">
+            <div class="line"></div>
+        </div>
+        <p class="copright">&copy;JobIU, 2020. Todos los derechos reservados</p>
+    </footer>
     <script src="rec_searches.js"></script>
 </body>
 </html>
