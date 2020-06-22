@@ -1,19 +1,55 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
-/*esto no lo tenías*/
 
-.background {
-    /* height: 70vh; */
-    background-image: linear-gradient(rgba(255,255,255, .05), rgba(255,255,255, .05)),
-    url("./img/main-page/background.jpg");
-    background-repeat: no-repeat;
-    /* background-position: center; */
-    background-size: cover;
+body{
+
+    background-color: cadetblue;
 }
-h1{
+
+header{
+    width:100%;
+    position: relative;
+}
+.title{
+     /* position:absolute;  */
+     text-align: center; 
+    /* left:50%; */
+}
+.p1{
+    Font-size:1.7em;
+    font-weight:bold;
+}
+.p2{
+    display:inline-block;
+    font-style: italic;
+    font-size:1em;
+    padding:5px
+}
+
+.p2:hover{
+    transform:translateX(50px);
+    transition: all .70s ease-in;
+    background: linear-gradient(90deg, #03a9f4, skyblue, white, #03a9f4);
+        background-size: 400%;
+        border-radius: 30px;
+        animation: animate 8s linear infinite;
+}
+ @keyframes animate{
+    0%{
+        background-position: 0% ;
+    }
+    100%{
+        background-position: 400% ;
+    }
+}
+
+
+
+
+/* h1{
     
     color: black;
     margin-left: 7em;
@@ -25,17 +61,18 @@ h1{
     margin-top: -17px;
     z-index: 5;
     
-}
+} */
 
-.logocomp{
+ .logocomp{
     display: inline-block;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
+    margin-top: 30px;
     left: 5px;
     top: 10px;
     border: 3px solid black;
-}
+ }  
 
 
 /* Menu de arriba */
@@ -45,18 +82,19 @@ h1{
     text-decoration: none;
     padding-left: 10px;
     padding-right:10px;
-    padding-top: 5px;
+    /* margin-top: 40px; */
+    padding-top: 10px; 
     padding-bottom: 5px;
     color: white;
 }
 
-.nav-item:hover{
+/* .nav-item:hover{
     background-color: steelblue;
 }
 .nav-item:active{
     background-color: steelblue;
     transform: scale(.8);
-}
+} */
 nav{
     background-color: transparent;
     position: absolute;
@@ -70,16 +108,17 @@ nav{
 }
 
 .menu{
-    position: absolute;
+    /* position: absolute; */
     right: 0;
     margin-top: 0;
-    z-index: 5;
     list-style: none;
     display: block;
     visibility: collapse;
+    
 }
 
 .menu-item{
+    display: inline-block;
     text-align: right;
     padding-bottom: 1px;
     border-bottom: 2px solid aqua;
@@ -94,13 +133,12 @@ nav{
 
 
 h2{
-    margin-top: 3em;
-    margin-left: 7em;
+    text-align: center;
 }
 .Jobs{
     height: 425px;
     width: 300px;
-    position: relative;
+    position: relative; 
     background-color:white;
     margin-left: auto;
     margin-right: auto;
@@ -108,7 +146,7 @@ h2{
 }
 
 .right{
-    position: absolute;
+    position:absolute ; 
     margin-top: 212px;
     right: 0;
     border-radius: 4px;
@@ -118,7 +156,7 @@ h2{
 }
 
 .left{
-    position: absolute;
+    position: absolute; 
     margin-top: 212px;
     left: 0;
     border-radius: 4px;
@@ -131,17 +169,18 @@ h2{
 
 
 /* Boton */
+
 .buttonjob{
-    display: inline-block;
-    position: absolute;
+    display: block;
     background-color: turquoise;
-    margin-top: 10px;
-    margin-left: 8.8em; 
-    border-radius: 6px ;
-    font-size: 20px;
+    margin-left:auto;
+    margin-right: auto;
     border: none;
     padding: 5px;
-    outline: none;
+    border-radius: 5px;
+    font-size:1.5em;
+    outline:none;
+    
     
 }
 
@@ -153,62 +192,236 @@ h2{
 /* Fin de botón */
 
 
-
-
-.bottom{
-    position: relative;
-    background-color: white;
+.footer{
+    background-color: black;
     margin-top: 30px;
     height: 150px;
     width: 100%;
-   margin-left: 0;
+    
 }
-[class^="menu"]{
-    text-align: center;
-}
-.menub{
-    position: absolute;
-    bottom: 60px;
-    left: 0;
+.footer a{
     text-decoration: none;
-    color: black;
-    font-size: 22px;
-    padding-left: 4px;
+    color: white;
 }
-.menub1{
-    position: absolute;
-    bottom: 60px;
-    left: 5em;
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
-}
-.menub2{
-    position: absolute;
-    bottom: 60px;
-    left: 13em;
-    text-decoration: none;
-    color: black;
-    font-size: 22px;
+.footer p{
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .jobiu{
-    position: absolute;
+    padding: 16px;
+    position:relative;
     bottom: 0;
-    padding: 0;
-    font-family: sans-serif;
-    display: inline-block;
-}
+    color: white;
+    display: inline-block; 
+ }
 
 
 .menub:active, .menub1:active, .menub2:active{
     color: white;
     background-color: teal;
     transform: scale(.9);
-}
+} 
 
 
 #toggle:checked ~ * .menu{
     visibility: visible;
 }
+
+@media (min-width: 1024px){
+
+    h1{
+        color:black;
+        margin-left: 20em;
+        font-size: 2.3em;
+
+    }
+
+    .companies{
+        margin-left: 48em;
+        position: relative;
+        padding-top:20px;
+        z-index: 5;
+        
+    }
+    .logocomp{
+        display: inline-block;
+        width: 300px;
+        height: 150px;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+         border: 3px solid black; 
+        /* border-radius: 6px solid black; */ 
+    }
+    /* Menu de arriba */
+    .nav-item{
+        background-color: transparent;
+        display: inline-block;
+        text-decoration: none;
+        padding-left: 10px;
+        padding-right:10px;
+        margin-top: 50px;
+        padding-bottom: 5px;
+        color: white;
+        font-size: 1.2em;
+    }
+    
+    .nav-item:hover{
+        background-color: steelblue;
+    }
+    .nav-item:active{
+        background-color: steelblue;
+        transform: scale(.8);
+    }
+    nav{
+        background-color: transparent;
+        position: absolute;
+        right: 0;
+    }
+
+    .menu{
+        font-size: 1.2em;
+    }
+    /* Menu de arriba */
+
+    h2{
+        color: black;
+        text-align:center;
+        font-size: 2.3em;
+        
+    }
+
+    .Jobs{
+        height: 700px;
+        width: 900px;
+        position: relative;
+        background-color:white;
+        margin-left: auto;
+        margin-right: auto;
+        border: 5px aquamarine solid;
+    }
+
+    .right{
+        position: absolute;
+        margin-top: 350px;
+        right: 0;
+        border-radius: 4px;
+        border:none;
+        outline: none;
+        font-size: 2em;
+       
+    }
+    
+    .left{
+        position: absolute;
+        margin-top: 350px;
+        left: 0;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        font-size: 2em;
+    }
+
+    .right:hover{
+        transform: translateX(3px);
+        transition: all .3s ease-out;
+    }
+
+    .left:hover{
+        transform: translateX(-3px);
+        transition: all .3s ease-out;
+    }
+    
+    .buttonjob{
+        position: relative;
+        background-color: turquoise;
+        border-radius: 6px ;
+        font-size: 1.7em;
+        border: none;
+        padding: 5px;
+        outline: none;
+        text-align: center;
+    }
+
+    .buttonjob:active{
+        transform: scale(.9);
+    }
+    .footer{
+        position: relative;
+        background-color: black;
+        margin-top: 30px;
+        height: 150px;
+        width: 100%px;
+        color: white;
+        
+    }
+    [class^="menu"]{
+        text-align: center;
+        margin-left:15px;
+    }
+    .menub{
+        display: inline-block;
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        /* padding-left: 4px; */
+        padding: 5px;
+    }
+    .menub1{
+        display: inline-block;
+        position: absolute;
+        bottom: 60px;
+        left: 5em;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        padding: 5px;
+    }
+    .menub2{
+        display:inline-block;
+        position: absolute;
+        bottom: 60px;
+        left: 13em;
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+        padding:5px
+    }
+
+    .wao_effect:hover{
+        background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+        background-size: 400%;
+        border-radius: 30px;
+        animation: animate 8s linear infinite;
+        /* transition: all .2s ease-in-out; */
+
+    }
+    
+
+    }
+    @keyframes animate{
+        0%{
+            background-position: 0% ;
+        }
+        100%{
+            background-position: 400% ;
+        }
+    }
+    
+     .jobiu{
+            position: absolute;
+            display: inline;
+            bottom: 0;
+            padding: 0;
+        }  
+    #toggle:checked ~ * .menu{
+        visibility: visible;
+    }
+
+     
 
