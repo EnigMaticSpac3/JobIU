@@ -9,6 +9,14 @@ body{
     background-color: cadetblue;
 }
 
+/* Background of the page */
+.head {
+    background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0,0,0,.1))
+    ,url('img/main-page/background.jpg');
+    background-size: cover;
+    height: 700px;
+}
+
 header{
     width:100%;
     position: relative;
@@ -209,9 +217,9 @@ h2{
     font-size: 16px;
 }
 
-.jobiu{
+.jobiurights{
     padding: 16px;
-    position:relative;
+    /* position:relative; */
     bottom: 0;
     color: white;
     display: inline-block; 
@@ -353,7 +361,7 @@ h2{
         background-color: black;
         margin-top: 30px;
         height: 150px;
-        width: 100%px;
+        width: 100%;
         color: white;
         
     }
@@ -363,7 +371,7 @@ h2{
     }
     .menub{
         display: inline-block;
-        position: absolute;
+        /* position: absolute; */
         bottom: 60px;
         left: 0;
         text-decoration: none;
@@ -374,7 +382,7 @@ h2{
     }
     .menub1{
         display: inline-block;
-        position: absolute;
+        /* position: absolute; */
         bottom: 60px;
         left: 5em;
         text-decoration: none;
@@ -384,7 +392,7 @@ h2{
     }
     .menub2{
         display:inline-block;
-        position: absolute;
+        /* position: absolute; */
         bottom: 60px;
         left: 13em;
         text-decoration: none;
@@ -413,12 +421,7 @@ h2{
         }
     }
     
-     .jobiu{
-            position: absolute;
-            display: inline;
-            bottom: 0;
-            padding: 0;
-        }  
+
     #toggle:checked ~ * .menu{
         visibility: visible;
     }
