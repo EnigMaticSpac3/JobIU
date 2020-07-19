@@ -29,6 +29,7 @@ header .title {
     top: 1.3em;
     left: 50%;
     transform: translate(-50%, 0%);
+    z-index: 1000;
 }
 header .title a {
     font-size: 1.7em;
