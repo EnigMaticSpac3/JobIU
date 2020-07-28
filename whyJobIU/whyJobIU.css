@@ -1,1 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --blue-main: #0c2657;
+    --blue-sky: #00BDC3;
+    --blue-alternative: #5B9DF4;
+    --font1: 'Nunito', sans-serif;
+    --font2: 'Lato', sans-serif;
+}
+
+/* body {
+    font-size: 10px;
+} */
+
+/* Page Title */
+.page-title {
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.page-title span {
+    color: var(--blue-main);
+}
 

@@ -9,12 +9,13 @@
 }
 /*general txt*/
 body {
+    font-size: 10px;
     font-family: var(--font1);
 }
 /*GENERAL MODIFIER_SubTitles*/
 .subtitles {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 2.4em;
     text-align: center;
 }
 
@@ -35,17 +36,16 @@ main {
 /*Searching the JOb*/
 .search-container {
     font-family: var(--font1);
-    padding: 1rem;
+    padding: 2.5rem;
     text-align: center;
 }
 /*Searching Labels*/
 .search-container .search-labels {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 90%));
     justify-content: center;
-    align-items: center;
+    font-size: 1rem;
 }
-
 .search-container label {
     position: relative;
 }
@@ -55,16 +55,15 @@ main {
     width: 16px;
     top: 50%;
     right: 0;
-    
     transform: translate(-100%, -45%); /*interesting*/
 }
 
 .search-container .buscador_design  {
     width: 100%;
-    background-color: transparent;
+    background-color: whitesmoke;
     border: 2.3px solid black;
     border-radius: 15px;
-    padding: 10px 40px;
+    padding: 0.7em 2em;
     margin: 20px auto;
     outline: none; /*para quitarle la linea al cuadro*/
     transition: all .3s ease-out;
@@ -96,37 +95,34 @@ main {
     background-color: #fff;
 }
 
-
-
 /** Most Searched Jobs Section! **/
 /*Magical Stuff*/
 
 .most-searched-jobs {
     width: 100%;
     text-align: center;
-    padding: 4em 1em 2em;
+    padding: 2rem 1rem 2rem;
 }
 
 .most-searched-jobs .most-searched-jobs_container {
     max-width: 1000px;
     display: flex;
-    align-items: center;
     margin: 0 auto;
     flex-wrap: wrap;
-    padding-top: 1.5em;
+    padding-top: 1.5rem;
 }
 
 .most-searched-jobs_container .item {
     flex: auto;
-    text-align: center; 
-    padding: .5em 0;
-    font-size: 1.2em;
+    padding: 1em .5em;
 }
 .most-searched-jobs_container .item a {
     text-decoration: none;
-    padding: 5px 15px;
+    padding: .5em 1.5em;
     border-radius: 20px;
     transition: all .24s ease-out;
+    flex-shrink: 1;
+    font-size: 1.4em;
 }
 .most-searched-jobs_container .item:nth-child(2n+1) a {
     background-color: var(--blue-main);
@@ -138,7 +134,7 @@ main {
 }
 
 .most-searched-jobs_container .item a:hover {
-    padding: 10px 20px;
+    padding: .8em 1.1em;
     background-image: linear-gradient(90deg, var(--blue-main), var(--blue-sky));
 }
 
@@ -146,8 +142,7 @@ main {
 .most-searched-jobs_container .between {
     display: none;
     flex: auto;
-    padding: 0 .7%;
-    font-size: .7em;
+    padding: 0 .2%;
 }
 .most-searched-jobs_container .between:nth-child(2n+2) {
     color: #112233;
@@ -164,7 +159,6 @@ main {
     width: 100%;
 }
 
-
 .recent-searches_container {
     padding: 0 auto;
     background-image: linear-gradient(rgba(0,0,0, .05), rgba(0,0,0, .05)),
@@ -179,7 +173,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 2em;
     background-color: #fff;
     margin-top: 1em;
     transition: all .3s ease-out;
@@ -191,7 +185,7 @@ main {
 
 /*text2Upper*/
 .recent-searches_container .searches li a {
-    font-size: 1.24em;
+    font-size: 1.8em;
     text-decoration: underline;
 }
 
@@ -199,7 +193,7 @@ main {
 .info4all {
     text-align: center;
     color: var(--blue-main);
-    font-size: 1.3em;
+    font-size: 2em;
 }
 /* Info4People */
 .info4people {
@@ -245,7 +239,7 @@ main {
 
 /*info4Business*/
 .info4business {
-    border-top: 10px var(--blue-alternative) solid;
+    border-top: 10px var(--blue-main) solid;
     padding: 2em 1.5em 0;
 }
 .info4business p {
@@ -267,25 +261,27 @@ main {
 
 .tiny-title2 {
     width: 100%;
-    color: black;
+    color: var(--blue-main);
     font-style: italic;
 }
 
 
 /** Footer **/
 footer {
-    padding: 7em 1em 2em;
+    padding: 7rem 2em 2em;
     color: var(--blue-main);
     font-family: var(--font1);
     font-weight: bold;
+    font-size: 1.2em;
 }
 .footer-menu {
+    font-size: 1.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .footer-menu a:hover {
-    animation: wao-effect 7s infinite;
+    animation: wao-effect 3s infinite;
 }
 @keyframes wao-effect {
     0% {
@@ -312,6 +308,7 @@ footer .divisor .line {
 
 /*Copyright footer*/
 footer .copright {
+    text-align: center;
     font-size: small;
 }
 
@@ -331,8 +328,8 @@ footer .copright {
     
     .search-container .search-labels {
         padding: 4em;
+        grid-template-columns: repeat(auto-fit, minmax(10%, 40%));
         justify-content: space-between;
-        flex-wrap: nowrap;
     }
 
     /*Input design*/

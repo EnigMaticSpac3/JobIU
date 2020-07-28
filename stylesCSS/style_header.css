@@ -9,6 +9,10 @@
 :root {
     --blue-main: #0C2657;
 }
+body {
+    font-size: 10px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -21,6 +25,7 @@ ul, li {
 /*Menu*/
 /*Titulo*/
 header {
+    font-size: 1.2em;
     width: 100%;
     position: relative;
 }
@@ -32,32 +37,29 @@ header .title {
     z-index: 1000;
 }
 header .title a {
-    font-size: 1.7em;
+    font-size: 2.56em;
     font-weight: bold;
 }
+/*Links in the header*/
 header a {
     color: var(--blue-main);
     font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.1rem;
 }
 
 /*Nav*/
 .nav-menu {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     right: 0;
-    padding: 4em 1em 1.5em;
+    padding: 5em 2em 1em;
 }
 /*just showing the SignIn BTN*/
 .nav-menu ul li:nth-child(1), .nav-menu ul li:nth-last-child(1) {
     display: none;
 }
 
-.nav-menu a {
-    font-size: 1.2em;
-}
 
 /*search-section-Btn*/
 .search-section-btn {
@@ -71,7 +73,7 @@ header a {
 /*Sign BTN*/
 .sign-btn a {
     text-align: center;
-    padding: 0px 10px;
+    padding: 0px 1em;
     border: 1.4px var(--blue-main) solid;
     border-radius: 10px;
     transition: all .3s ease;
@@ -87,12 +89,10 @@ header a {
     .nav-menu ul {
         display: flex;
     }
-    .nav-menu ul li {
-        padding: 0 .3em;
-    }
     .nav-menu ul li a {
         color: black;
         transition: all .3s ease-in-out;
+        font-size: 1.8em;
     }
     .nav-menu ul li:nth-child(1), .nav-menu ul li:nth-last-child(1) {
         display: block;
