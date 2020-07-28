@@ -319,8 +319,8 @@ footer .copright {
 
     /* GENERAL MODIFIER_SubTiltes */
     .subtitles {
-        font-size: 1.7em;
-        padding: 2em 0;
+        font-size: 2rem;
+        padding: 1em 0;
     }
     .back-container {
         padding: 0 3em;
@@ -338,36 +338,29 @@ footer .copright {
         margin-right: 120px;
         font-weight: 600;
         font-family: var(--font2);
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     .buscador_design:focus {
         border-color: var(--blue-sky);
     }
-    /*Change position of the sections*/
-
-
 
     /*Most Searched Jobs are good*/
     .most-searched-jobs {
         padding: 2em 1em;
         background-color: rgba(0,0,0, .05);
     }
-    /*Recent Searches*/
 
+    /*Recent Searches*/
     .recent-searches_container {
-        padding: 5em 5.3em;
+        padding: 5em 10em;
         height: 500px;
         background-attachment: fixed;
     }
 
     /* Info4All */
     .info4all {
-        font-size: 1.55em;
+        font-size: 2em;
     }
-
-
-
-
 
     /*FOOTER*/
     footer {
