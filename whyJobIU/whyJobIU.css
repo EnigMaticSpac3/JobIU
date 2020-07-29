@@ -1,1 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+:root {
+    --blue-main: #0c2657;
+    --blue-sky: #00BDC3;
+    --blue-alternative: #5B9DF4;
+    --font1: 'Nunito', sans-serif;
+}
+
+body {
+    font-size: 10px;
+    font-family: var(--font1);
+    overflow-x: hidden;
+}
+/* InfoContainer padding */
+.info-container {
+    padding: 1rem 2.5em;
+}
+/* Page Title */
+.page-title {
+    font-weight: bolder;
+    font-size: 2em;
+}
+.page-title span {
+    color: var(--blue-main);
+}
+
+/* - Info - */
+section {
+    z-index: 1000;
+}
+/* in General */
+.article-divider {
+    padding: 3em 0;
+}
+.article-divider h2 {
+    font-weight: bold;
+    font-size: 2.4em;
+}
+.article-divider p {
+    font-size: 1.6em;
+}
+
+/*** intoSections */
+.intro-section .article-divider h2 {
+    font-size: 4em;
+}
+.intro-section .article-divider img {
+    width: 100%;
+}
+
+/*CustomSearch-Sect*/
+.customsearch-section .article-divider {
+    text-align: center;
+}
+.customsearch-section .article-divider p {
+    text-align: right;
+    padding: 2em 0 0 2em;
+}
+.customsearch-section .article-divider img {
+    width: 100%;
+}
+
+/* SHAPE */
+.shape {
+    position: absolute;
+    top: 53em;
+    right: 0;
+    z-index: -1;
+    width: 0;
+    height: 25em;
+    border-top: 40em solid var(--blue-sky);
+    border-right: 25em solid transparent;
+    border-bottom: 11.5em solid var(--blue-sky);
+    border-left: 10em solid transparent;
+    border-radius: 10px 10px 10px 0px;
+}
+
+/* Posibilities-Sect */
+.posibilities-section .grid-article {
+    display: grid;
+    grid-template-areas:
+    "title"
+    "info1"
+    "images"
+    "info2";
+    gap: 3em;
+    text-align: center;
+}
+.grid-article .grid-title {
+    grid-area: title;
+}
+.grid-article .grid-info1 {
+    grid-area: info1;
+}
+.grid-article .grid-images {
+    grid-area: images;
+}
+
+/* End-Section */
+.end-section {
+    padding: 4em 0;
+}
