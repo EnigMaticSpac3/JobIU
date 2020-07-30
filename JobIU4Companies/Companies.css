@@ -162,6 +162,7 @@ header{
     display: block;
     text-decoration: none;
     color: black;
+    font-size:25px;
 }
 /* .nav-item:hover{
     background-color: steelblue;
