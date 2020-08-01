@@ -4,19 +4,21 @@
     --blue-main: #0c2657;
     --blue-sky: #00BDC3;
     --blue-alternative: #5B9DF4;
-    --font1: 'Roboto', sans-serif;
-    --font2: 'Lato', sans-serif;
+    --font-title: 'Sora', sans-serif;
+    --font-subs: 'Montserrat', sans-serif;
+    --font-txt: 'Nunito', sans-serif;
 }
 /*general txt*/
 body {
     font-size: 10px;
-    font-family: var(--font1);
+    font-family: var(--font-txt);
 }
 /*GENERAL MODIFIER_SubTitles*/
 .subtitles {
     font-weight: 400;
     font-size: 2.4em;
     text-align: center;
+    font-family: var(--font-subs);
 }
 
 .back-container {
@@ -35,7 +37,7 @@ main {
 }
 /*Searching the JOb*/
 .search-container {
-    font-family: var(--font1);
+    font-family: var(--font-txt);
     padding: 2.5rem;
     text-align: center;
 }
@@ -153,7 +155,6 @@ main {
 
 /** Here Starts the recent searches-Section **/
 .recent-searches {
-    font-family: var(--font2);
     padding-top: 4rem;
     padding-bottom: 1em;
     width: 100%;
@@ -235,6 +236,10 @@ main {
 .info4people .info-sign-in a:hover {
     background-color: var(--blue-main);
     color: #fff;
+}
+.info4people .info-img {
+    width: 30vw;
+    padding: 3em 0;
 }
 
 /*info4Business*/

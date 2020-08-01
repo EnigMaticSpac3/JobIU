@@ -8,9 +8,11 @@
 }
 :root {
     --blue-main: #0C2657;
+    --font-oswald: 'Oswald', sans-serif;
 }
 body {
     font-size: 10px;
+    font-family: var(--font-oswald);
 }
 
 a {
@@ -89,7 +91,7 @@ header a {
 footer {
     padding: 7rem 2em 2em;
     color: var(--blue-main);
-    font-family: var(--font1);
+    font-family: var(--font-oswald);
     font-weight: bold;
     font-size: 1.2em;
 }
@@ -98,9 +100,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: underline 5s linear;
 }
 .footer-menu a:hover {
     animation: wao-effect 3s infinite;
+    text-decoration: underline;
 }
 @keyframes wao-effect {
     0% {
@@ -160,14 +164,6 @@ footer .copright {
     }
 
 
-
-
-
-
-
-
-
-    
     /*FOOTER*/
     footer {
         padding: 9em 3em 2em;
