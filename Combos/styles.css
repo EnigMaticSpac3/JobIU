@@ -33,7 +33,7 @@ h1{
     left: 250px;
     width:300px;
     height:400px;
-    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     color: white;
     border-radius:15px;
 }
@@ -84,13 +84,14 @@ h1{
     display: inline-block;
     margin-top:35px;
     margin-left: 100px;
-    padding: 15px;
-    background-color: lightseagreen;
+    padding: 10px;
+    font-size:15px;
+    /* background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%); */
+    background-color:#d4b405;
     border:none;
     outline: none;
     border-radius: 5px;
 }
-
 .button:active{
     transform: scale(.9);
 }
@@ -102,7 +103,7 @@ h1{
     left: 650px;
     width:300px;
     height:400px;
-    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     color: white;
     border-radius:15px;
 }
@@ -122,7 +123,7 @@ h1{
     left: 1050px;
     width:300px;
     height:450px;
-    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     color: white;
     border-radius:15px;
 }
@@ -140,7 +141,7 @@ h1{
     left: 250px;
     width:300px;
     height:450px;
-    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     color: white;
     border-radius:15px;
 }
@@ -158,7 +159,7 @@ h1{
     left: 650px;
     width:300px;
     height:400px;
-    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
     color: white;
     border-radius:15px;
 }
