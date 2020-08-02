@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden;
+}
 /* Header */
 .header{
     background-image: url(./pexels-fauxels-3183150.jpg);
@@ -28,7 +31,7 @@ h1{
 /* Combos */
 /* Combo1 */
 .comb1{
-    position:absolute;
+    position: absolute;
     margin-top: 100px;
     left: 250px;
     width:300px;
@@ -153,7 +156,7 @@ h1{
 
 /* Fin de Comb4 */
 /* Comb5 */
-.comb5{
+.comb5 {
     position:absolute;
     margin-top: 600px;
     left: 650px;

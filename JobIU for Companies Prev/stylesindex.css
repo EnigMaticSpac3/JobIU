@@ -1,28 +1,42 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
+:root {
+    --blue-main: #0c2657;
+    --blue-sky: #00BDC3;
+    --font-title: 'Sora', sans-serif;
+    --font-subs: 'Montserrat', sans-serif;
+    --font-txt: 'Nunito', sans-serif;
+}
+body {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .back{
-    background-color:lightblue;
     width: 100%;
     height: 400px;
+    background-image: url('../img/main-page/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-h1{
+h1 {
+    padding: 1em 0 0;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    color: darkblue;
+    font-family: var(--font-title);
+    color: var(--blue-main);
 }
 
 .message{
-
     text-align: center;
-    font-size: 2.5em;
-    font-family: 'Nunito', sans-serif;
-    color: darkblue;
-
+    font-size: 1em;
+    font-family: var(--font-txt);
+    color: var(--blue-main);
 }
 
 .nav{
@@ -80,7 +94,7 @@ h1{
 
 .posting{
     margin-top:30px;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: var(--font-subs);
 }
 
 /* Parte de abajo de la pagina */
@@ -92,18 +106,22 @@ h1{
 
 .p{
    text-align:center;
-   font-family:'Nunito', sans-serif;
+   font-family: var(--font-txt);
    font-size: 25px;
 }
 
 .p2{
    text-align: center;
-   font-family:'Nunito', sans-serif;
+   font-family: var(--font-txt);
    font-size: 25px;
 } 
 
-.form{
-    height:350px;
+/*INFO*/
+.mform {
+    font-family: var(--font-txt);
+}
+.form {
+    height: 250px;
     display: inline-block;
 }
 

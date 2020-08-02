@@ -1,12 +1,17 @@
-*{
+* {
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
+:root {
+    --blue-main: #0c2657;
+    --blue-sky: #00BDC3;
+    --font-title: 'Sora', sans-serif;
+    --font-subs: 'Montserrat', sans-serif;
+    --font-txt: 'Nunito', sans-serif;
+}
 body{
-
-    background-color: cadetblue;
+    background-color: var(--blue-sky);
 }
 
 /* Background of the page */
@@ -17,34 +22,35 @@ body{
     height: 700px;
 }
 
-header{
+header {
     width:100%;
     position: relative;
 }
-.title{
-     /* position:absolute;  */
-     text-align: center; 
-    /* left:50%; */
+.title {
+    font-family: var(--font-title);
+    text-align: center; 
+    color: var(--blue-main);
 }
-.p1{
+.title-1 {
     Font-size:1.7em;
     font-weight:bold;
 }
-.p2{
+.title-sub {
     display:inline-block;
     font-style: italic;
     font-size:1em;
     padding:5px
 }
 
-.p2:hover{
+.title-sub:hover{
     transform:translateX(50px);
-    transition: all .70s ease-in;
+    transition: all .25s ease-in;
     background: linear-gradient(90deg, #03a9f4, skyblue, white, #03a9f4);
         background-size: 400%;
         border-radius: 30px;
         animation: animate 8s linear infinite;
 }
+
  @keyframes animate{
     0%{
         background-position: 0% ;
@@ -84,29 +90,28 @@ header{
 
 
 /* Menu de arriba */
-.nav-item{
+.nav-item {
     background-color: transparent;
     display: inline-block;
     text-decoration: none;
     padding-left: 10px;
     padding-right:10px;
-    /* margin-top: 40px; */
     padding-top: 10px; 
     padding-bottom: 5px;
     color: white;
-    font-size:15px;
+    font-size: 1rem;
+    font-family: var(--font-subs);
 }
-.nav-item-m{
+.nav-item-m {
+    font-family: var(--font-subs);
     background-color: transparent;
     display: inline-block;
     text-decoration: none;
     padding-left: 10px;
     padding-right:10px;
-    /* margin-top: 40px; */
     padding-top: 10px; 
     padding-bottom: 5px;
     color: white;
-    font-size:15px;
 }
 /* Modal */
 .modal-container{
@@ -125,6 +130,7 @@ header{
 }
 
 .modal{
+    font-family: var(--font-subs);
     width: 40%;
     height: 50%;
     background-color: #fff;
@@ -210,7 +216,8 @@ nav{
 /* Fin de menu display de opciones */
 
 
-h2{
+h2 {
+    font-family: var(--font-subs);
     text-align: center;
 }
 .Jobs{
@@ -256,10 +263,8 @@ h2{
     border: none;
     padding: 5px;
     border-radius: 5px;
-    font-size:1.5em;
-    outline:none;
-    
-    
+    font-size: 1.5em;
+    outline:none;  
 }
 
 
@@ -270,7 +275,8 @@ h2{
 /* Fin de botón */
 
 
-.footer{
+.footer {
+    font-family: var(--font-txt);
     background-color: black;
     margin-top: 30px;
     height: 150px;
