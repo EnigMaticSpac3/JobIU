@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --blue-main: #0c2657;
+    --blue-sky: #00BDC3;
+    --font-title: 'Sora', sans-serif;
+    --font-subs: 'Montserrat', sans-serif;
+    --font-txt: 'Nunito', sans-serif;
+}
+body {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.back{
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/main-page/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    padding: 1em 0 0;
+    text-align: center;
+    font-family: var(--font-title);
+    color: var(--blue-main);
+}
+
+.message{
+    text-align: center;
+    font-size: 1em;
+    font-family: var(--font-txt);
+    color: var(--blue-main);
+}
+
+.nav{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.log{
+
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    background-color: darkturquoise;
+    font-size: 1.7em;
+    border-radius: 15px;
+
+}
+
+.log:hover{
+    background-color: white;
+    border: 2px solid darkturquoise;
+    color: darkturquoise;
+}
+
+.log:active{
+    transform: scale(.9);
+}
+
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.create{
+
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;
+    background-color: darkturquoise;
+    font-size: 1.7em;
+    border-radius: 15px;
+
+}
+
+.create:hover{
+    background-color: white;
+    border: 2px solid darkturquoise;
+    color: darkturquoise;
+}
+
+.create:active{
+    transform: scale(.9);
+}
+
+.posting{
+    margin-top:30px;
+    font-family: var(--font-subs);
+}
+
+/* Parte de abajo de la pagina */
+
+.back_bottom{
+     text-align: center; 
+    /* border: 3px solid skyblue; */
+}
+
+.p{
+   text-align:center;
+   font-family: var(--font-txt);
+   font-size: 25px;
+}
+
+.p2{
+   text-align: center;
+   font-family: var(--font-txt);
+   font-size: 25px;
+} 
+
+/*INFO*/
+.mform {
+    font-family: var(--font-txt);
+}
+.form {
+    height: 250px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 605px){
+    .back{
+        height: 300px;
+        width: 100%;
+    }
+    .message{
+        font-size: 1.3em;
+    }
+
+    .form{
+        height: 100px;
+    }
+    .posting{
+        font-size: 1.3em;
+    }
+
+    .log{
+        font-size: 1.1em;
+    }
+    .create{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 1110px){
+    .back{
+        width: 100%;
+        height: 500px;
+    }
+    .message{
+        font-size:2.8em;
+    }
+
+    .log{
+        font-size: 2em;
+    }
+    .create{
+        font-size: 2em;
+    }
+    
+    .form{
+        height:400px;
+    }
+    .posting{
+        font-size: 2.8em;
+    }
+
+    .mform{
+        font-size: 2em;
+    }
+    .madvert{
+        font-size: 2em;
+    }
+}
+ @media screen and (min-width: 2480px){
+     h1{
+         font-size: 4em;
+     }
+    .back{
+        width:100%;
+        height:600px;
+    }
+    .message{
+        font-size:4em;
+    }
+
+    .log{
+        font-size: 2.8em;
+    }
+    .create{
+        font-size: 2.8em;
+    }
+    
+    .form{
+        height:400px;
+    }
+    .posting{
+        font-size: 4em;
+    }
+
+    .mform{
+        font-size: 2em;
+    }
+    .madvert{
+        font-size: 2em;
+    }
+    
+
+}
+
+
+
+
+ 
+
+
+
+
+
+
+

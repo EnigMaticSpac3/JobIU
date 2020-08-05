@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobIU-Find your Job</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="stylesCSS/normalize.css">
+    <link rel="shortcut icon" href="img/JobIUfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylesCSS/style_header-n-footer.css">
+    <link rel="stylesheet" href="stylesCSS/style_index.css" >
+    <script src="https://kit.fontawesome.com/b3ff63caad.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="back-container">
+        <header>
+            <div class="title">
+                <a href="#">JobIU</a>
+            </div>
+            
+            <nav class="nav-menu"> 
+                <div class="search-section-btn">
+                    <a href="#">Encuentra tu empleo</a>
+                </div>
+                <ul>
+                    <li><a href="#">Subir CV</a></li>
+                    <li class="sign-btn">
+                        <a href="./Crear Cuenta/loginpage.html">Iniciar Sesión</a>
+                    </li>
+                    <li><a href="./JobIU4Companies/JobIUforcompanies.html">Empresas/Publicar</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    
+        <main>
+             <!-- Form automated with rec_searches.js  -->
+            <form class="search-container" for="s_job" action="">
+                <div class="search-labels">
+                    <label for="search_job">
+                        <input id="s_job" type="text" 
+                        placeholder="Job (company or job)" class="buscador_design"> 
+                        <img class="search-icon" src="img/icons/searchicon.svg" alt="*">
+                    </label>
+                    
+                    <label for="searchCountry">
+                        <input 
+                        id="searchCountry" 
+                        type="text" 
+                        placeholder="Country or City"
+                        value="Panamá, Ciudad de Panamá"
+                        class="buscador_design">
+                        <img class="search-icon" src="img/icons/location.svg" alt="*">
+                    </label>
+                </div>
+                
+                <div class="search-button">
+                    <button id="btn" type="submit">Search</button>
+                </div>
+            </form>
+            
+        </main>
+    </div>
+    
+    <br><br><br>
+    
+    
+    <section class="most-searched-jobs">
+        <h2 class="subtitles">Más Buscados</h2>
+        <div class="most-searched-jobs_container">
+            <div class="item">
+                <a href="#">Contabilidad...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Marketing...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Logística...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Administrador de empresas...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Turismo...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">Remoto...</a>
+            </div>
+            <div class="between">
+                <i class="fas fa-circle"></i>
+            </div>
+            <div class="item">
+                <a href="#">TeleTrabajo...</a>
+            </div>
+        </div>
+    </section>
+    <!-- Ends Most Searched Jobs -->
+    
+    <!-- Inicia la sección de Busquedas recientes -->
+    <section class="recent-searches">
+        <h2 class="subtitles">Búsquedas Recientes</h2>
+        <div class="recent-searches_container">
+            <!-- Modificar con JS -->
+            <ul class="searches">
+                <li>
+                    <a href="#">Manager</a>
+                    <div class="option-icons">
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Gerente</a>
+                    <div class="option-icons">
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Analista</a>
+                    <div class="option-icons">
+                        <i class="far fa-star"></i>
+                        <i class="fas fa-trash-alt"></i>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </section>  
+    <br><br>
+    <section class="info4all">
+        <article class="info4people">
+            <h2 class="tiny-title">
+                <a href="./whyJobIU/whyJobIU.html">¿<span>Por qué</span> JobIU?</a>
+            </h2>
+            <p class="info-best-place">
+                El mejor lugar para encontrar <span>tu</span> empleo
+            </p>
+            <p class="info-sign-in">
+                <a href="./Crear Cuenta/loginpage.html">Inicie Sesión</a>
+            </p>
+            <p>
+                y suba su CV
+            </p>
+            <img class="info-img" src="./img/main-page/curriculum.svg" alt="curriculum img">
+        </article>
+        <article class="info4business">
+            <p>
+                ¿Busca a sus próximos <span>candidatos?</span>
+            </p>
+            <a href="./JobIU for Companies Prev/indexComp.html">
+                <img src="./img/main-page/JobIU4Companies.svg" alt="JobIU - For Companies" class="jobiu4companies-image">
+            </a>
+        </article>
+                <h2 class="tiny-title tiny-title2">
+                    es lo que necesita
+                </h2>
+    </section>
+    <!-- Most Searched Jobs -->
+
+
+    <footer>
+        <ul class="footer-menu">
+            <li><a href="#">JobIU</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Contáctenos</a></li>
+        </ul>
+        <div class="divisor">
+            <div class="line"></div>
+        </div>
+        <p class="copright">&copy;JobIU, 2020. Todos los derechos reservados</p>
+    </footer>
+    <script src="rec_searches.js"></script>
+</body>
+</html>
