@@ -202,24 +202,35 @@ footer {
         padding: 5em 0 0;
     }
     .footer-menu {
-        font-size: 1.8em;
-    }
-    .footer-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* padding: 0 2em; */
+        padding: 0 9em 2.2em 4em;
     }
     .footer-menu .footer-menu-options {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        font-size: 1.3em;
+        font-size: 1.8em;
     }
     .footer-menu .brand {
         text-align: left;
     }
+    .footer-menu .brand h3 {
+        font-size: 3em;
+    }
+    .footer-menu .brand p {
+        font-size: 1.4em;
+    }
     .footer-menu-options li {
-        padding: 0 1.2em;   
+        padding: 0 1.3em;   
+    }
+    /*©copyright part*/
+    .copyrights {
+        padding: 3em;
+        padding-bottom: 1em;
+        background-color: #C4C4C4;
+        color: var(--blue-main);
+        font-size: 1.3em;
     }
 }
