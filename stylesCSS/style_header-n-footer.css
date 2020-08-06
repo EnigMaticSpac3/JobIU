@@ -20,6 +20,9 @@ a {
     color: inherit;
     cursor: pointer;
 }
+a:hover {
+    text-decoration: none;
+}
 ul, li {
     list-style-type: none;
     padding: 0;
@@ -88,27 +91,67 @@ header a {
 
 
 /*FOOTER*/
+
 footer {
-    padding: 7rem 2em 2em;
-    color: var(--blue-main);
-    font-family: var(--font-oswald);
-    font-weight: bold;
-    font-size: 1.2em;
+    padding: 3em 0 0;
+    background-color: var(--blue-main);
+    color: #fff;
 }
 .footer-menu {
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-areas: 
+    'options options brand';
     align-items: center;
-    transition: underline 5s linear;
+    padding: 0 2em;
 }
-.footer-menu a:hover {
-    animation: wao-effect 3s infinite;
+
+.footer-menu .brand {
+    grid-area: brand;
+    display: block;
+    text-align: right;
+}
+.footer-menu .footer-menu-options {
+    grid-area: options;
+    display: block;
+}
+.footer-menu .copyrights {
+    grid-area: copyrights;
+    display: block;
+}
+
+.footer-menu .footer-menu-options {
+    list-style-type: none;   
+    font-size: 1.6em; 
+}
+.footer-menu-options li {
+    line-height: 3em;
+}
+.footer-menu-options li a:hover {
+    color: #fff;
+    animation: wao-effect infinite 8s;
     text-decoration: underline;
+}
+.footer-button {
+    line-height: 3em;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+}
+/*Language*/
+.flag-language {
+    width: 20px;
+}
+
+/*©copyright part*/
+.copyrights {
+    padding: 2em;
+    background-color: #C4C4C4;
+    color: var(--blue-main);
+    font-size: 1.3em;
 }
 @keyframes wao-effect {
     0% {
-        color: var(--blue-main);
+        color: #fff;
     }
     25% {
         color: var(--blue-sky);
@@ -116,24 +159,14 @@ footer {
     50% {
         color: var(--blue-alternative);
     }
+    75% {
+        color: green;
+    }
     100% {
-        color: var(--blue-main);
+        color: #fff;
     }
 }
 
-/*Line divisor*/
-footer .divisor {
-    padding: 1em;
-}
-footer .divisor .line {
-    border: 1px black solid;
-}
-
-/*Copyright footer*/
-footer .copright {
-    text-align: center;
-    font-size: small;
-}
 
 @media (min-width: 1024px) {
     .nav-menu ul {
@@ -166,9 +199,27 @@ footer .copright {
 
     /*FOOTER*/
     footer {
-        padding: 9em 3em 2em;
+        padding: 5em 0 0;
     }
     .footer-menu {
-        font-size: x-large;
+        font-size: 1.8em;
+    }
+    .footer-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 0 2em; */
+    }
+    .footer-menu .footer-menu-options {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 1.3em;
+    }
+    .footer-menu .brand {
+        text-align: left;
+    }
+    .footer-menu-options li {
+        padding: 0 1.2em;   
     }
 }

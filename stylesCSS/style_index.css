@@ -200,12 +200,18 @@ main {
 .info4people {
     padding: 2em 0;
 }
+
+/*FOR TINY TITLES*/
 .tiny-title {
     background-color: var(--blue-sky);
     font-weight: 700;
-    padding: .5em;
+    padding: 2em;
     font-size: inherit;
 }
+.tiny-title a {
+    text-decoration: underline;
+}
+
 .info4people h2 a:hover {
     text-decoration: underline;
 }
@@ -224,12 +230,12 @@ main {
 }
 
 .info4people .info-sign-in {
-    padding: 2em;
+    padding: 1em;
 }
 .info4people .info-sign-in a{
     padding: .5em 20px;
     border: 2px var(--blue-main) solid;
-    border-radius: 20px;
+    border-radius: 15px;
     font-weight: bold; 
     transition: all .3s ease-in-out;
 }
@@ -239,7 +245,7 @@ main {
 }
 .info4people .info-img {
     width: 30vw;
-    padding: 3em 0;
+    padding: 2em 0;
 }
 
 /*info4Business*/
@@ -265,12 +271,14 @@ main {
 }
 
 .tiny-title2 {
-    width: 100%;
-    color: var(--blue-main);
-    font-style: italic;
+    background-color: var(--blue-sky);
+    font-weight: 700;
+    padding: .5em;
+    font-size: inherit;
 }
 
 /** -FOOTER in file- **/
+
 
 /*
     Desktop Config
@@ -330,10 +338,5 @@ main {
     }
 
     /*FOOTER*/
-    footer {
-        padding: 9em 3em 2em;
-    }
-    .footer-menu {
-        font-size: x-large;
-    }
+    
 }
