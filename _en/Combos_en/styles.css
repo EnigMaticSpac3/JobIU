@@ -3,12 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --blue-main: #0c2657;
+    --blue-sky: #00BDC3;
+    --blue-alternative: #5B9DF4;
+    --font-title: 'Sora', sans-serif;
+    --font-subs: 'Montserrat', sans-serif;
+    --font-txt: 'Nunito', sans-serif;
+}
+
 body {
+    font-family: var(--font-txt);
     overflow-x: hidden;
 }
 /* Header */
 .header{
-    background-image: url(./pexels-fauxels-3183150.jpg);
+    background-image: linear-gradient(20deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, .4)), 
+    url(./pexels-fauxels-3183150.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -19,14 +30,18 @@ body {
 .header p{
     font-size:2.5em;
     font-weight: bold;
-    color:lightseagreen;
+    color:var(--blue-main);
     text-align:center;
 }
 /* Fin of Header */
 h1{
     text-align: center;
     font-size: 3em;
-    color:lightseagreen;
+}
+h1 a {
+    color:var(--blue-sky);
+    text-decoration: none;
+
 }
 /* Combos */
 /* Combo1 */
