@@ -89,23 +89,11 @@ header a {
 
 /*FOOTER*/
 footer {
-    padding: 7rem 2em 2em;
-    color: var(--blue-main);
-    font-family: var(--font-oswald);
-    font-weight: bold;
-    font-size: 1.2em;
+    
 }
-.footer-menu {
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: underline 5s linear;
-}
-.footer-menu a:hover {
-    animation: wao-effect 3s infinite;
-    text-decoration: underline;
-}
+
+
+
 @keyframes wao-effect {
     0% {
         color: var(--blue-main);
