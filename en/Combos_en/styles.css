@@ -46,9 +46,7 @@ h1 a {
 /* Combos */
 /* Combo1 */
 .comb1{
-    position: absolute;
-    margin-top: 100px;
-    left: 250px;
+    
     width:300px;
     height:400px;
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
@@ -116,9 +114,7 @@ h1 a {
 /* Fin Comb1 */
 /* Comb2 */
 .comb2{
-    position:absolute;
-    margin-top: 100px;
-    left: 650px;
+    
     width:300px;
     height:400px;
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
@@ -136,9 +132,7 @@ h1 a {
 /* Comb3 */
 
 .comb3{
-    position:absolute;
-    margin-top: 100px;
-    left: 1050px;
+    
     width:300px;
     height:450px;
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
@@ -154,9 +148,7 @@ h1 a {
 /* Fin de Comb3 */
 /* Comb4 */
 .comb4{
-    position:absolute;
-    margin-top: 600px;
-    left: 250px;
+   
     width:300px;
     height:450px;
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
@@ -172,9 +164,7 @@ h1 a {
 /* Fin de Comb4 */
 /* Comb5 */
 .comb5 {
-    position:absolute;
-    margin-top: 600px;
-    left: 650px;
+    
     width:300px;
     height:400px;
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
@@ -187,4 +177,111 @@ h1 a {
 .comb5:hover{
     transform:translateY(-12px);
     transition: .3s ease-in;
+}
+
+@media screen and (max-width: 800px){
+    .header p{
+        font-size:1.8em;
+    }
+
+    h1{
+        font-size:2.5em;
+    }
+    .head{
+        height: 150px;
+    }
+    .head h2{
+        font-size:1.5em;
+    }
+
+    .head sup{
+        font-size:25px;
+    }
+    .head span{
+        font-size:25px;
+    }
+    .head sub{
+        font-size:25px;
+    }
+    .bene{
+        font-size:20px;
+    }
+
+    .bene_items{
+        font-size:15px;
+    }
+    [class ^="comb"]{
+        position: relative;
+        left: 0px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        height:360px;
+    }
+    .comb5{
+        position: relative;
+        left: 0px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        height:300px;
+    }
+
+
+}
+ @media screen and (min-width: 1024px){
+    .comb1{
+        position: absolute;
+        margin-top: 100px;
+        left:50px;
+    }
+    .comb2{
+        position: absolute;
+        margin-top: 100px;
+        left:400px;
+    }
+    .comb3{
+        position: absolute;
+        margin-top: 100px;
+        left:750px;
+    }
+    .comb4{
+        position:absolute;
+        margin-top: 600px;
+        left:50px;
+    }
+    .comb5{
+        position:absolute;
+        margin-top: 600px;
+        left:400px;
+    }
+} 
+
+@media screen and (min-width:1100px){
+    .comb1{
+        position: absolute;
+        margin-top: 100px;
+        left: 250px;
+    }
+    .comb2{
+        position:absolute;
+        margin-top: 100px;
+        left: 650px;
+    }
+    .comb3{
+        position:absolute;
+        margin-top: 100px;
+        left: 1050px;
+    }
+    .comb4{
+        position:absolute;
+        margin-top: 600px;
+        left: 250px;
+    }
+
+    .comb5{
+        position:absolute;
+        margin-top: 600px;
+        left: 650px;
+    }
 }
