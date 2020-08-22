@@ -28,14 +28,14 @@ a {
 h1 {
     padding: 1em 0 0;
     text-align: center;
-    font-family: var(--font-title);
+     
     color: var(--blue-main);
 }
 
 .message{
     text-align: center;
     font-size: 1em;
-    font-family: var(--font-txt);
+     
     color: var(--blue-main);
 }
 
@@ -96,7 +96,7 @@ h1 {
 
 .posting{
     margin-top:30px;
-    font-family: var(--font-subs);
+     
 }
 
 /* Parte de abajo de la pagina */
@@ -108,19 +108,19 @@ h1 {
 
 .p{
    text-align:center;
-   font-family: var(--font-txt);
+    
    font-size: 25px;
 }
 
 .p2{
    text-align: center;
-   font-family: var(--font-txt);
+    
    font-size: 25px;
 } 
 
 /*INFO*/
 .mform {
-    font-family: var(--font-txt);
+     
 }
 .form {
     height: 250px;
@@ -132,8 +132,11 @@ h1 {
         height: 300px;
         width: 100%;
     }
+    h1{
+        font-size:24px;
+    }
     .message{
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .form{
@@ -144,10 +147,10 @@ h1 {
     }
 
     .log{
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
     .create{
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 }
 

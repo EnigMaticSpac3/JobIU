@@ -1,24 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@400;700&family=Sora:wght@400;500&display=swap');
 /*Esta parte es para móviles*/
 :root {
     --blue-main: #0c2657;
     --blue-sky: #00BDC3;
     --blue-alternative: #5B9DF4;
-    --font-title: 'Sora', sans-serif;
-    --font-subs: 'Montserrat', sans-serif;
-    --font-txt: 'Nunito', sans-serif;
+
 }
 /*general txt*/
 body {
     font-size: 10px;
-    font-family: var(--font-txt);
+     
 }
 /*GENERAL MODIFIER_SubTitles*/
 .subtitles {
-    font-weight: 400;
+    font-weight: bold;
+    font-style: italic;
     font-size: 2.4em;
     text-align: center;
-    font-family: var(--font-subs);
 }
 
 .back-container {
@@ -37,7 +34,7 @@ main {
 }
 /*Searching the JOb*/
 .search-container {
-    font-family: var(--font-txt);
+     
     padding: 2.5rem;
     text-align: center;
 }

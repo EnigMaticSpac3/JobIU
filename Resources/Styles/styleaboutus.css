@@ -15,7 +15,7 @@
 }
 body {
     font-size: 10px;
-    font-family: var(--font-txt);
+     
 }
 
 a {
@@ -166,11 +166,11 @@ header a {
 
 
 /*Purpose Section*/
-
 .purpose-section .section-title {
     background-color: var(--blue-sky);
     position: absolute;
     width: 100vw;
+    top: 26em;
     left: 0;
     text-align: center;
     font-style: italic;
@@ -179,9 +179,18 @@ header a {
     padding: .5em 2em;
     color: #fff;
 }
+.purpose-section {
+    margin-top: 5em;
+}
+.purpose-section p {
+    font-size: 1.2em;
+    text-align: justify;
+}
 .article-grid .about-img {
     width: 100%;
+    padding: 3em 0;
 }
 
+/*-Vission&Mission-*/
 
 

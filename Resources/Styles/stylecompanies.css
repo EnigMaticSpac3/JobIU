@@ -27,7 +27,7 @@ header {
     position: relative;
 }
 .title {
-    font-family: var(--font-title);
+     
     text-align: center; 
     color: var(--blue-main);
 }
@@ -100,10 +100,10 @@ header {
     padding-bottom: 5px;
     color: white;
     font-size: 1rem;
-    font-family: var(--font-subs);
+     
 }
 .nav-item-m {
-    font-family: var(--font-subs);
+     
     background-color: transparent;
     display: inline-block;
     text-decoration: none;
@@ -130,7 +130,7 @@ header {
 }
 
 .modal{
-    font-family: var(--font-subs);
+     
     width: 40%;
     height: 50%;
     background-color: #fff;
@@ -217,7 +217,7 @@ nav{
 
 
 h2 {
-    font-family: var(--font-subs);
+     
     text-align: center;
 }
 .Jobs{
@@ -276,7 +276,7 @@ h2 {
 
 
 .footer {
-    font-family: var(--font-txt);
+     
     background-color: black;
     margin-top: 30px;
     height: 150px;
