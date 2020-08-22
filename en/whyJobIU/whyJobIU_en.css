@@ -11,7 +11,7 @@
 
 body {
     font-size: 10px;
-    font-family: var(--font-title);
+    font-family: var(--font-txt);
     overflow-x: hidden;
 }
 /* InfoContainer padding */
