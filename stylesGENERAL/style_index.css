@@ -302,7 +302,6 @@ main {
         border: 1.5px solid black;
         margin-right: 120px;
         font-weight: 600;
-        font-family: var(--font2);
         font-size: 1.1em;
     }
     .buscador_design:focus {

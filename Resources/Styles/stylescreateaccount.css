@@ -6,7 +6,7 @@
 
 body{
     /* background: linear-gradient(269deg, , #0aa3dd, , , ); */
-    font-family: 'Nunito', sans-serif;
+     
    /*  background: linear-gradient(269deg, #fbc2eb, #a6c1ee, #e69ddd, #a6c1ee);
     background-size: 800% 800%;
 
@@ -156,7 +156,7 @@ body{
     background: none; 
     padding: 0.5rem 0.7rem;
     font-size: 1.2rem;
-    font-family:'Nunito', sans-serif;
+    
     color: white;
 }
 

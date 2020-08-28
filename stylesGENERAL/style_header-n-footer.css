@@ -1,19 +1,16 @@
 /**Styles that are going to be for the header section**/
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
-/*colors*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*colors*/
 :root {
     --blue-main: #0C2657;
-    --font-oswald: 'Roboto Mono', monospace;
 }
+
 body {
     font-size: 10px;
-    font-family: var(--font-oswald);
 }
 
 a {
@@ -46,7 +43,6 @@ header .title {
 header .title a {
     font-size: 3.36em;
     /* font-weight: bold; */
-    font-family: 'Roboto Mono', monospace;
 }
 header .title a:hover {
     color: var(--blue-main);
@@ -54,7 +50,6 @@ header .title a:hover {
 /*Links in the header*/
 header a {
     color: var(--blue-main);
-    font-family: 'Oswald', sans-serif;
     font-size: 1.1rem;
 }
 
