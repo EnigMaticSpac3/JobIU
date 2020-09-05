@@ -1,0 +1,91 @@
+body{
+    background-color: lightseagreen;
+    
+    }
+    header{
+        margin:auto;
+        background-position: center;
+        text-align: center; 
+        color: black;
+        font-size: 30px;
+        background-color: white;
+        height: 1.2em;
+        width: 10em;
+        border: 3px solid black;
+        margin-top: 50px;
+    }
+    .form{
+        margin: 0 auto;
+        margin-top: 5em;
+        height: auto;
+        width: 15em;
+        background-color: white;
+        border: 5px solid black;
+        text-align: center;  
+        
+        padding: 0.5em; 
+        font-size: 20px;
+        color: black;
+        }
+    .form__title{
+        font-size: 30px;
+     }
+    
+
+button{
+    background-color: aquamarine;
+    border-radius: 10px;
+    display: inline-block;
+    padding: .5em;
+    height: 30px;
+    width: 120px;
+    border:none;
+}
+
+button:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid aquamarine;
+    transform: translateY(-5px);
+}
+
+button:active{
+    outline: none;
+    transform: scale(.8);
+}
+
+
+
+.términos{
+     font-size: 18px;
+}
+
+
+
+.correo_diseño{
+    border-radius: 10px;
+    border: 2px solid black;
+    outline: none;
+}
+.correo_diseño:focus{
+    background-color: lightslategray;
+    color: white;
+}
+
+    
+    /*  footer{
+      
+      background-color: black;
+      background-position: center;
+    
+       }
+      .footer{
+        color: white;
+        text-align: center;
+        font-size: 1em;
+         } */
+
+
+
+
+

@@ -1,0 +1,338 @@
+/*Esta parte es para móviles*/
+:root {
+    --blue-main: #0c2657;
+    --blue-sky: #00BDC3;
+    --blue-alternative: #5B9DF4;
+
+}
+/*general txt*/
+body {
+    font-size: 10px;
+     
+}
+/*GENERAL MODIFIER_SubTitles*/
+.subtitles {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+.back-container {
+    margin: auto;
+    background-image: linear-gradient(20deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .7)), url('../Resources/img/main-page/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 4em; */
+    width: 100%;
+} 
+main {
+    width: 100%;
+    position: relative;
+    /* background-color: brown; */
+}
+/*Searching the JOb*/
+.search-container {
+     
+    padding: 2.5rem;
+    text-align: center;
+}
+/*Searching Labels*/
+.search-container .search-labels {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10%, 90%));
+    justify-content: center;
+    font-size: 1rem;
+}
+.search-container label {
+    position: relative;
+}
+
+.search-container label .search-icon {
+    position: absolute;
+    width: 16px;
+    top: 50%;
+    right: 0;
+    transform: translate(-100%, -45%); /*interesting*/
+}
+
+.search-container .buscador_design  {
+    width: 100%;
+    background-color: whitesmoke;
+    border: 2.3px solid black;
+    border-radius: 15px;
+    padding: 0.7em 2em;
+    margin: 20px auto;
+    outline: none; /*para quitarle la linea al cuadro*/
+    transition: all .3s ease-out;
+}
+
+/*estilos para los input*/
+.buscador_design:focus {
+    border-color:var(--blue-sky);
+}
+
+
+/*modifying the search button*/
+.search-button {
+    padding-top: 1.2rem;
+}
+.search-button button{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: medium;
+    background-color: var(--blue-sky);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.search-button button:hover {
+    border: 3px solid var(--blue-sky);
+    background-color: #fff;
+}
+
+/** Most Searched Jobs Section! **/
+/*Magical Stuff*/
+
+.most-searched-jobs {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem 2rem;
+}
+
+.most-searched-jobs .most-searched-jobs_container {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+}
+
+.most-searched-jobs_container .item {
+    flex: auto;
+    padding: 1em .5em;
+}
+.most-searched-jobs_container .item a {
+    text-decoration: none;
+    padding: .5em 1.5em;
+    border-radius: 20px;
+    transition: all .24s ease-out;
+    flex-shrink: 1;
+    font-size: 1.4em;
+}
+.most-searched-jobs_container .item:nth-child(2n+1) a {
+    background-color: var(--blue-main);
+    color: azure;
+}
+.most-searched-jobs_container .item:nth-child(4n+1) a {
+    background-color: var(--blue-sky);
+    color: azure;
+}
+
+.most-searched-jobs_container .item a:hover {
+    padding: .8em 1.1em;
+    background-image: linear-gradient(90deg, var(--blue-main), var(--blue-sky));
+}
+
+/*Point Between*/
+.most-searched-jobs_container .between {
+    display: none;
+    flex: auto;
+    padding: 0 .2%;
+}
+.most-searched-jobs_container .between:nth-child(2n+2) {
+    color: #112233;
+}
+.most-searched-jobs_container .between:nth-child(4n+2) {
+    color: #00BDC3;
+}
+
+/** Here Starts the recent searches-Section **/
+.recent-searches {
+    padding-top: 4rem;
+    padding-bottom: 1em;
+    width: 100%;
+}
+
+.recent-searches_container {
+    padding: 0 auto;
+    background-image: linear-gradient(rgba(0,0,0, .05), rgba(0,0,0, .05)),
+    url("../Resources/img/main-page/recent_background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    /* background-attachment: scroll; */
+    height: 400px;
+}
+.recent-searches_container .searches li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    background-color: #fff;
+    margin-top: 1em;
+    transition: all .3s ease-out;
+}
+/*hover in List*/
+.recent-searches_container .searches li:hover {
+    box-shadow: 10px 15px 20px rgba(0,0,0, .5);
+}
+
+/*text2Upper*/
+.recent-searches_container .searches li a {
+    font-size: 1.8em;
+    text-decoration: underline;
+}
+
+/*** Info4All Section ***/
+.info4all {
+    text-align: center;
+    color: var(--blue-main);
+    font-size: 2em;
+}
+/* Info4People */
+.info4people {
+    padding: 2em 0;
+}
+
+/*FOR TINY TITLES*/
+.tiny-title {
+    background-color: var(--blue-sky);
+    font-weight: 700;
+    padding: 2em;
+    font-size: inherit;
+}
+.tiny-title a {
+    text-decoration: underline;
+}
+
+.info4people h2 a:hover {
+    text-decoration: underline;
+}
+.info4people h2 span {
+    font-weight: normal;
+    color: #fff;
+}
+.info4people .info-best-place {
+    color: inherit;
+    text-transform: uppercase;
+    padding: 1em 2em;
+}
+.info4people .info-best-place span {
+    font-weight: bold;
+    font-size: 1.35em;
+}
+
+.info4people .info-sign-in {
+    padding: 1em;
+}
+.info4people .info-sign-in a{
+    padding: .5em 20px;
+    border: 2px var(--blue-main) solid;
+    border-radius: 15px;
+    font-weight: bold; 
+    transition: all .3s ease-in-out;
+}
+.info4people .info-sign-in a:hover {
+    background-color: var(--blue-main);
+    color: #fff;
+}
+.info4people .info-img {
+    width: 20vw;
+    padding: 2em 0;
+}
+
+/*info4Business*/
+.info4business {
+    border-top: 10px var(--blue-main) solid;
+    padding: 2em 1.5em 0;
+}
+.info4business p {
+    line-height: 1.7em;
+}
+.info4business p span {
+    background-color: var(--blue-main);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+/*Image JobIU - For Companies*/
+.info4business a .jobiu4companies-image {
+    padding: 2em 0;
+}
+.jobiu4companies-image {
+    width: 250px;
+}
+
+.tiny-title2 {
+    background-color: var(--blue-sky);
+    font-weight: 700;
+    padding: .5em;
+    font-size: inherit;
+}
+
+/** -FOOTER in file- **/
+
+
+/*
+    Desktop Config
+*/
+@media (min-width: 1024px) {
+
+    /* GENERAL MODIFIER_SubTiltes */
+    .subtitles {
+        font-size: 2rem;
+        padding: 1em 0;
+    }
+    .back-container {
+        padding: 0 3em;
+    }
+    
+    .search-container .search-labels {
+        padding: 4em;
+        grid-template-columns: repeat(auto-fit, minmax(10%, 40%));
+        justify-content: space-between;
+    }
+
+    /*Input design*/
+    .search-container .buscador_design {
+        border: 1.5px solid black;
+        margin-right: 120px;
+        font-weight: 600;
+        font-size: 1.1em;
+    }
+    .buscador_design:focus {
+        border-color: var(--blue-sky);
+    }
+
+    /*Most Searched Jobs are good*/
+    .most-searched-jobs {
+        padding: 2em 1em;
+        background-color: rgba(0,0,0, .05);
+    }
+    .most-searched-jobs_container .item {
+        padding: 2em 1em;
+    }
+    .most-searched-jobs_container .item a {
+        
+        font-size: 1.1rem;
+    }
+
+    /*Recent Searches*/
+    .recent-searches_container {
+        padding: 5em 10em;
+        height: 500px;
+        background-attachment: fixed;
+    }
+
+    /* Info4All */
+    .info4all {
+        font-size: 2em;
+    }
+
+    /*FOOTER*/
+    
+}
