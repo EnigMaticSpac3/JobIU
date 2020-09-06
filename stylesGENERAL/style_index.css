@@ -20,7 +20,7 @@ body {
 
 .back-container {
     margin: auto;
-    background-image: linear-gradient(20deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .7)), url('../img/main-page/background.jpg');
+    background-image: linear-gradient(20deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, .7)), url('../Resources/img/main-page/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -160,7 +160,7 @@ main {
 .recent-searches_container {
     padding: 0 auto;
     background-image: linear-gradient(rgba(0,0,0, .05), rgba(0,0,0, .05)),
-    url("../img/main-page/recent_background.jpg");
+    url("../Resources/img/main-page/recent_background.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -302,7 +302,6 @@ main {
         border: 1.5px solid black;
         margin-right: 120px;
         font-weight: 600;
-        font-family: var(--font2);
         font-size: 1.1em;
     }
     .buscador_design:focus {

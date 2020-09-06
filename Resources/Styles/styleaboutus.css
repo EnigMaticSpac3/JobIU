@@ -1,12 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@400;700&family=Sora:wght@400;500&display=swap');
 /*Esta parte es para móviles*/
 :root {
     --blue-main: #0c2657;
     --blue-sky: #00BDC3;
     --blue-alternative: #5B9DF4;
-    --font-title: 'Sora', sans-serif;
-    --font-subs: 'Montserrat', sans-serif;
-    --font-txt: 'Nunito', sans-serif;
 }
 * {
     padding: 0;
@@ -52,7 +48,6 @@ header .title a {
 /*Links in the header*/
 header a {
     color: var(--blue-main);
-    font-family: 'Oswald', sans-serif;
     font-size: 1.1rem;
 }
 /*Not showing the bigger nav*/

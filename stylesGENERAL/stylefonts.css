@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@400;700&family=Sora:wght@400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 
 :root {
     --font-title: 'Roboto Mono', monospace;
     /* --font-title: 'Sora', sans-serif; */
     --font-subs: 'Lato', sans-serif;
     --font-txt: 'Nunito', sans-serif;
+    --font-oswald: 'Oswald', sans-serif;
 }
 
 /* TITLES' FONTS */

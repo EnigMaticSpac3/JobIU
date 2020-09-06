@@ -1,12 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@400;700&family=Sora:wght@400;500&display=swap');
-
 :root {
     --blue-main: #0c2657;
     --blue-sky: #00BDC3;
     --blue-alternative: #5B9DF4;
-    --font-txt: 'Nunito', sans-serif;
-    --font-subs: 'Montserrat', sans-serif;
-    --font-title: 'Sora', sans-serif;
 }
 
 body {

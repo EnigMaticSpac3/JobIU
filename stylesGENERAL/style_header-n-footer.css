@@ -1,19 +1,16 @@
 /**Styles that are going to be for the header section**/
-@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Roboto+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap');
-/*colors*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*colors*/
 :root {
     --blue-main: #0C2657;
-    --font-oswald: 'Roboto Mono', monospace;
 }
+
 body {
     font-size: 10px;
-    font-family: var(--font-oswald);
 }
 
 a {
@@ -44,9 +41,8 @@ header .title {
     z-index: 1000;
 }
 header .title a {
-    font-size: 3.36em;
+    font-size: 2.5em;
     /* font-weight: bold; */
-    font-family: 'Roboto Mono', monospace;
 }
 header .title a:hover {
     color: var(--blue-main);
@@ -54,23 +50,26 @@ header .title a:hover {
 /*Links in the header*/
 header a {
     color: var(--blue-main);
-    font-family: 'Oswald', sans-serif;
     font-size: 1.1rem;
 }
 
 /*Nav*/
 .nav-menu {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     right: 0;
-    padding: 5em 2em 1em;
+    padding: 6.4em 2em 1em;
 }
 /*just showing the SignIn BTN*/
 .nav-menu ul li:nth-child(1), .nav-menu ul li:nth-last-child(1) {
     display: none;
 }
+/*fixing a weird stuff from the web*/
+header ul, ol, dl {
+    margin-bottom: 0;
 
+}
 
 /*search-section-Btn*/
 .search-section-btn {
@@ -84,9 +83,9 @@ header a {
 /*Sign BTN*/
 .sign-btn a {
     text-align: center;
-    padding: 0px 1em;
-    border: 1.4px var(--blue-main) solid;
-    border-radius: 10px;
+    padding: .14em 1em;
+    border: .11rem var(--blue-main) solid;
+    border-radius: .6rem;
     transition: all .3s ease;
 }
 .sign-btn a:hover {
@@ -175,6 +174,9 @@ footer {
 
 
 @media (min-width: 1024px) {
+    header .title a {
+        font-size: 3.1em;
+    }
     .nav-menu ul {
         display: flex;
     }

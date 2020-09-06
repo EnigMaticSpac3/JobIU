@@ -118,7 +118,7 @@ body{
 
 
 .description{
-    position:absolute;
+    position: relative;
     width: 420px;
     background-color:white;
     height: 600px;
@@ -212,7 +212,7 @@ body{
 }
 .abilities{
     background-color:white;
-    position: absolute;
+    position: relative;
     top:400px;
     right:25px;
     width:500px;
