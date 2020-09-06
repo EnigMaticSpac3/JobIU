@@ -19,7 +19,7 @@ body {
 /* Header */
 .header{
     background-image: linear-gradient(20deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, .4)), 
-    url(./pexels-fauxels-3183150.jpg);
+    url(../img/combos/combos1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:fixed;
