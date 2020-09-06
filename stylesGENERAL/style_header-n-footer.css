@@ -41,7 +41,7 @@ header .title {
     z-index: 1000;
 }
 header .title a {
-    font-size: 3.36em;
+    font-size: 2.5em;
     /* font-weight: bold; */
 }
 header .title a:hover {
@@ -56,16 +56,20 @@ header a {
 /*Nav*/
 .nav-menu {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
     right: 0;
-    padding: 5em 2em 1em;
+    padding: 6.4em 2em 1em;
 }
 /*just showing the SignIn BTN*/
 .nav-menu ul li:nth-child(1), .nav-menu ul li:nth-last-child(1) {
     display: none;
 }
+/*fixing a weird stuff from the web*/
+header ul, ol, dl {
+    margin-bottom: 0;
 
+}
 
 /*search-section-Btn*/
 .search-section-btn {
@@ -79,9 +83,9 @@ header a {
 /*Sign BTN*/
 .sign-btn a {
     text-align: center;
-    padding: 0px 1em;
-    border: 1.4px var(--blue-main) solid;
-    border-radius: 10px;
+    padding: .14em 1em;
+    border: .11rem var(--blue-main) solid;
+    border-radius: .6rem;
     transition: all .3s ease;
 }
 .sign-btn a:hover {
@@ -170,6 +174,9 @@ footer {
 
 
 @media (min-width: 1024px) {
+    header .title a {
+        font-size: 3.1em;
+    }
     .nav-menu ul {
         display: flex;
     }
