@@ -15,28 +15,31 @@
     <link rel="stylesheet" href="../stylesGENERAL/stylefonts.css">
     <link rel="stylesheet" href="../stylesGENERAL/style_header-n-footer.css">
     <link rel="stylesheet" href="../Resources/Styles/styleaboutus.css">
+    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/b3ff63caad.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="title">
+        <div class="title subs-font">
             <a href="./index.html">JobIU</a>
         </div>
         <nav class="nav-menu-container">
-            <div class="nav-menu-shown">
-                <ul class="nav-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
+            <div class="nav-menu-mobile">
+                <h3 class="menu-title">
+                    <a href="#">JobIU</a>
+                </h3>
+                <ul class="menu-list">
+                    <li><a href="../es/index.html">INICIO</a></li>
+                    <li><a href="../es/PorqueJobIU_es.html">¿POR QUÉ JOBIU?</a></li>
+                    <li><a href="#">SOBRE NOSOTROS</a></li>
                 </ul>
                 <div class="options">
-                    <a href="#">Create Account</a>
-                    <a href="#">Sign In</a>
+                    <a href="../es/user/CrearCuenta_es.html">Crear Cuenta</a>
+                    <a href="../es/user/IniciarSesión_es.html">Iniciar Sesión</a>
                 </div>
                 <div class="menu-close">
-                    <img src="../../img/icons/close-x.svg" alt="close">
-                    <p>close</p>
+                    <img onclick="toggleNav()" src="../../img/icons/close-x.svg" alt="close">
+                    <p>cerrar</p>
                 </div>
             </div>
             <div class="nav-menu-notshown">
@@ -45,7 +48,7 @@
                         Inicia Sesión
                     </a>
                 </div>
-                <i class="fas fa-bars menu-btn"></i>
+                <i onclick="toggleNav()" class="fas fa-bars menu-btn"></i>
             </div>
         </nav>
 
@@ -53,18 +56,20 @@
 
         </nav>
     </header>
-    <h1 class="page-title">
-        ABOUT-US
-    </h1>
-    <div class="container">
-        <section class="intro-section">
-            <img class="logo" src="../../img/jobiulogo.png" alt="JobIU Logo">
-            <p>Nosotros le encontramos <span>su</span> Trabajo</p>
-        </section>
-        <section class="purpose-section">
-            <h2 class="section-title">
-                At JobIU we only have one purpose, to help.
-            </h2>
+    <div class="page-title-back">
+        <h1 class="page-title">
+            Sobre Nosotros
+        </h1>
+    </div>
+    <section class="intro-section">
+        <img class="logo" src="../../img/logo.png" alt="JobIU Logo">
+        <p>Encontramos el trabajo para <span>tí</span></p>
+    </section>
+    <section class="purpose-section">
+        <h2 class="sub-title subs-font">
+            Ayudar, el principal propósito en JobIU.
+        </h2>
+        <div class="container">
             <article class="article-grid">
                 <p class="p1">
                     JobIU cambia el juego por completo.
@@ -73,36 +78,136 @@
                 <p class="p2">
                     Nuestra tecnología le permitirá dejar que su CV lo busque en los puestos en los que tendrá más oportunidades de ser contratado. Increíble, ¿verdad?
                 </p>
-                <img class="about-img" src="../Resources/img/aboutus/about1.png" alt="about1">
+                <figure class="about-img-contain">
+                    <img class="about-img" src="../Resources/img/aboutus/about1.png" alt="about1">
+                    <figcaption>
+                        Image from: <a href="#"><i>Freepik</i></a>
+                    </figcaption>
+                </figure>
                 <p class="p3">
-                    No más tiempo de búsqueda, no más esperas para ser encontrado en miles.
-                    ¡JobIU conectará al profesional que usted, con el trabajo profesional para usted basado en su currículum!
+                    No más tiempo buscando, ya no tienes que esperar más hasta ser encontrado entre miles de candidatos.
+                    ¡JobIU conectará al profesional usted, con el trabajo profesional para usted basado en su currículum!
                 </p>
                 <p class="p4">
                     Aquí puede postularse para los puestos con la mayor probabilidad de ser elegido simplemente cargando su currículum.
                 </p>
             </article>
-        </section>
-        <section class="vission&mission-section">
-            <article class="vission-part">
+        </div>
+    </section>
+    <div class="container">
+        <section class="vission-n-mission-section">
+            <article class="vission-part subs-font">
                 <h2 class="title-section">
-                    Our Vission
+                    Nuestra Visión
                 </h2>
-                <div class="info-vision"></div>
-                <p>
-                    
-                </p>
+                <div class="info-vision txt-font">
+                    <p>
+                        “Tener la menor cantidad de personas desempleadas, dándoles la garantía de que tienen más oportunidades”
+                    </p>
+                    <figure class="vision-img-contain">
+                        <img src="../Resources/img/aboutus/about2.png" alt="Vision img">
+                        <figcaption>
+                            Image from: <a href="#"><i>Freepik</i></a>
+                        </figcaption>
+                    </figure>
+                </div>
             </article>
-            <article>
-                <h2 class="title-section">
-                    Our Mission
+            <article class="mission-part">
+                <h2 class="title-section subs-font">
+                    Nuestra Misión
                 </h2>
-                <div class="info-mission">
-                    <p></p>
+                <div class="info-mission txt-font">
+                    <p>
+                        “Ofrecerte las
+                        mejores oportunidades laborales "
+                    </p>
+                    <figure>
+                        <img src="../Resources/img/aboutus/about3.jpg" alt="">
+                        <figcaption>
+                            Image from: <a href="#"><i>Freepik</i></a>
+                        </figcaption>
+                    </figure>
                 </div>
             </article>
         </section>
     </div>
+    <section class="social-impact-section txt-font">
+        <h2 class="sub-title">
+            <span>~</span> Impacto Social <span>~</span>
+        </h2>
+        <p class="social-p1">
+            No es solo ofrecerte un trabajo.
+            <br>
+            Tampoco darte solo las facilidades para encontrar uno.
+        </p>
+        <div class="container">
+            <p class="social-p2">
+                ¡Te damos las herramientas para triunfar!
+                <span>Conectarte con las personas adecuadas para mejorar tu carrera y a tí profesionalmente.</span> 
+            </p>
+            <img class="img-impact2" src="../Resources/img/aboutus/aboutus-impact2.jpg" alt="Social-Impact2">
+            <p class="social-p2-2">
+                Conectarte con las personas adecuadas para mejorar tu carrera y a tí profesionalmente.
+            </p>
+        </div>  
+    </section>
+    <div class="container">
+        <div class="special-social-p3">
+            <p class="social-p3">
+                Te brindamos oportunidades más valiosas que realmente puedes aprovechar.
+            </p>
+        </div>
+        <section class="itmatters-section">
+            <p>
+                Porque <span class="span1">importa</span>,
+                <br>
+                Porque <span class="span2">tú</span> importas.
+            </p>
+            <img src="../img/logo.png" alt="JobIU_logo">
+        </section>
+    </div>      
+    <br><br><br>
+    <footer>
+        <div class="footer-menu">
+            <div class="brand">
+                <h3>
+                    <a href="./index.html">JobIU</a>
+                </h3>
+                <p>Encontramos el trabajo para tí</p>
+            </div>
+            <ul class="footer-menu-options">
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="../es/companies_en/indexComp_es.html">JobIU Empresas</a></li>
+                <li><a href="#">Contacto</a></li>
+                <div class="btn-group dropup">
+                    <button type="button" class="footer-button dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Idioma
+                    </button>
+                    <div class="dropdown-menu">
+                    <!--Dropdown menu links-->
+                        <a class="dropdown-item" href="../en/aboutus.html">
+                            Inglés
+                            <img class="flag-language" src="../../img/icons/languages/mini_flag-usa.png" alt="English">
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            Español
+                            <img class="flag-language" src="../../img/icons/languages/mini_flag-spain.png" alt="Spanish">
+                        </a>
+                    </div>
+                </div>
+            </ul>   
+        </div>
+        <div class="copyrights">
+            <p>
+                ©JobIU 2020. Todos los Derechos Reservados.
+            </p>
+        </div>
+    </footer>
+    <!-- <SCRIPTS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <!-- menu_SCRIPT -->
     <script src="../Resources/js/Aboutus/menu.js"></script>
 </body>
 </html>
