@@ -1,8 +1,15 @@
+/* FONTS-CLASSES
+.title-font
+.subs-font
+.txt-font
+*/
+
 /*Esta parte es para móviles*/
 :root {
     --blue-main: #0c2657;
     --blue-sky: #00BDC3;
     --blue-alternative: #5B9DF4;
+    --green-impact: #5FB541;
 }
 * {
     padding: 0;
@@ -11,7 +18,7 @@
 }
 body {
     font-size: 10px;
-     
+     overflow-x: hidden;
 }
 
 a {
@@ -52,7 +59,7 @@ header a {
 }
 /*Not showing the bigger nav*/
 .nav-menu-big {
-    display: none;
+    display: block;
 }
 .nav-menu-notshown {
     display: flex;
@@ -83,38 +90,89 @@ header a {
 }
 
 /*NAVMENU*/
-.nav-menu-shown {
+.nav-menu-mobile {
     position: fixed;
     top: 0;
-    left: 0;
-    display: none;
+    left: 100%;
+    right: 0;
+    display: block;
     flex-direction: column;
-    justify-content: center;
-    padding: 1em 7em;
+    text-align: center;
+    padding: 1em 3.5em;
     height: 100vh;
-    width: 100%;
-    background-color: grey;
+    width: -50%;
+    background-color: #eee;
     z-index: 1000;
+    overflow-y: scroll;
+    transition: all 1s ease-in-out;
 }
-.nav-menu {
+.nav-menu-mobile .menu-title a {
+    font-size: 1.1em;
+    position: relative;
+    top: .5em;
+}
+.menu-list {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-bottom: 5em;
 }
-.nav-menu li {
-    padding: 1.5em 0;
+.menu-list li {
+    padding: 4em 0 1em;
+    width: 100%;
+    border-bottom: 2px solid black;
 }
-.nav-menu li a {
-    color: white;
+.menu-list li a {
+    color: var(--blue-main);
 }
-.nav-menu-shown .menu-close {
+.nav-menu-mobile .options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu-mobile .options a {
+    border-radius: .5em;
+    padding: .3em .7em;
+}
+.nav-menu-mobile .options a:nth-child(1) {
+    background-color: transparent;
+    border: 1px solid var(--blue-main);
+    transition: all .2s ease-out;
+}
+.nav-menu-mobile .options a:nth-child(1):hover {
+    background-color: var(--blue-main);
+    border: 1px solid transparent;
+    transform: scale(1.05);
+    color: #eee;
+}
+.nav-menu-mobile .options a:nth-child(2) {
+    background-color: var(--blue-main);
+    color: #eee;
+    transition: all .2s ease-out;
+}
+.nav-menu-mobile .options a:nth-child(2):hover {
+    background-color: transparent;
+    transform: scale(1.05);
+    color: var(--blue-main);
+    border: 1px solid var(--blue-main);
+}
+
+.nav-menu-mobile .menu-close {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/*ACTIVE MENU*/
-.nav-menu-shown.active {
-    display: flex;
+.nav-menu-mobile .menu-close img {
+    width: 13%;
+    padding-top: 4em;
+    cursor: pointer;
 }
+/*ACTIVE MENU*/
+/* .nav-menu-mobile {
+} */
 /* .nav-menu-shown.active .menu-close {
     display: flex;
 } */
@@ -123,18 +181,25 @@ header a {
     width: 40px;
 }
 
-/* -- StartsPage -- */
-.page-title {
+/* -- StartsBodyPage -- */
+.page-title-back {
     background-image: linear-gradient(20deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .6)
-    ), url('./img/aboutus.png');
+    ), url('../img/aboutus/aboutus.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+}
+.page-title {
+    background: -webkit-linear-gradient(left, #0C2657, #00BDC3);
     width: 100%;
     text-align: center;
-    font-size: 3em;
+    font-size: 3em; 
     padding: 1.5em 3em;
     display: flex;
     justify-content: center;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container {
@@ -159,26 +224,27 @@ header a {
     color: var(--blue-main);
 }
 
-
-/*Purpose Section*/
-.purpose-section .section-title {
-    background-color: var(--blue-sky);
-    position: absolute;
-    width: 100vw;
-    top: 26em;
-    left: 0;
+/*GENERAL weird sub-title*/
+.sub-title {
+    position: relative;
+    width: 100%;
     text-align: center;
     font-style: italic;
-    font-size: 2.3em;
+    font-size: 2.8em;
     font-weight: 300;
     padding: .5em 2em;
     color: #fff;
 }
-.purpose-section {
-    margin-top: 5em;
+/*Purpose Section*/
+.purpose-section .sub-title {
+    background-color: var(--blue-sky);
+    /* top: 21em; */
 }
+/* .purpose-section {
+    margin-top: 2em;
+} */
 .purpose-section p {
-    font-size: 1.2em;
+    font-size: 1.6em;
     text-align: justify;
 }
 .article-grid .about-img {
@@ -187,5 +253,271 @@ header a {
 }
 
 /*-Vission&Mission-*/
+.vission-n-mission-section {
+    padding: 5rem 0 5rem;
+    text-align: center;
+    font-size: 1em;
+}
+.vission-n-mission-section p {
+    font-size: 1.3rem;
+    font-style: italic;
+    padding: .3rem 2em;
+}
+.vission-part {
+    padding-bottom: 5em;
+}
+.vission-part .info-vision img {
+    width: 100%;
+    padding: 0 3em;
+}
+
+.mission-part .info-mission img {
+    width: 100%;
+    padding: 0 5em;
+}
+
+/*- Social Impact - Section -*/
+.social-impact-section {
+    padding: 7em 0em 2em;
+}
+.social-impact-section .sub-title {
+    background-color: var(--green-impact);
+    
+    transition: opacity .5s ease-in-out;
+}
+.social-impact-section .sub-title span {
+    visibility: hidden;
+    transition: visibility .4s ease-out;
+}
+.social-impact-section .sub-title:hover span {
+    visibility: visible;
+}
+.social-impact-section .sub-title:hover {
+    opacity: 0.8;
+}
+
+/* paragraphs */
+.social-impact-section p {
+    font-size: 1rem;
+    text-align: justify;
+}
+.social-impact-section .social-p1 {
+    background-color: rgba(196, 196, 196, .5);
+    padding: 2em 3em;
+    width: 100%;
+    text-align: center;
+}
+.social-impact-section .social-p2 span {
+    display: none;
+}
+.social-impact-section .img-impact2 {
+    padding: 4em 0;
+}
+
+.special-social-p3 {
+    background-image: linear-gradient(45deg, var(--green-impact), var(--blue-alternative)); 
+    padding:1.5em;
+}
+.special-social-p3 .social-p3 {
+    background-image: linear-gradient(45deg,rgba(0, 0, 5, .5), rgba(255, 255, 255, .25)), url('../img/aboutus/aboutus-impact3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #eee;
+    font-weight: 500;
+    font-size: 2em;
+    padding: 5em 2em;
+}
+
+.social-impact-section img {
+    width: 100%;
+}
+
+/* itMatter Section */
+.itmatters-section {
+    padding-top: 3.5em;
+    text-align: center;
+    font-size: 2.3em;
+}
+.itmatters-section .span1 {
+    text-decoration: underline;
+}
+.itmatters-section .span2 {
+    color: var(--blue-main);
+    font-weight: bold;
+    transition: color .35s ease-in-out;
+}
+.itmatters-section p:hover .span2 {
+    color: var(--blue-sky);
+}
+.itmatters-section img {
+    width: 50%;
+    border-radius: 50%;
+}
 
 
+/* Laptop view */
+@media screen and (min-width: 992px) {
+    .page-title {
+        font-size: 5em;
+    }
+    /* Menu4Computers */
+
+    .nav-menu-mobile .menu-close {
+        position: absolute;
+        top: 0;
+    }
+
+
+    /* CONTAINER */
+    .container {
+        padding: 3em 20em;
+    }
+    .intro-section {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: .0em;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 3.5em;
+        padding: 2.5em 4em;
+    }    
+    .intro-section .logo {
+        width: 7em;
+        margin: auto;
+    }
+
+    /*GENERAL weird sub-title*/
+    .sub-title {
+        font-size: 2.8em;
+        font-weight: 500;
+        padding: .5em 2em;
+        color: #fff;
+    }
+    /*Purpose Section*/
+    .purpose-section p {
+        font-size: 2em;
+        text-align: justify;
+    }
+    .article-grid {
+        display: grid;
+        gap: .5em 3em;
+        grid-template-areas: 
+        "p1 p3"
+        "p2 p4"
+        "about-img about-img";
+    }
+    .article-grid .p1 {
+        grid-area: p1;
+    }
+    .article-grid .p2 {
+        grid-area: p2;
+    }
+    .article-grid .p3 {
+        grid-area: p3;
+    }
+    .article-grid .p4 {
+        grid-area: p4;
+    }
+    .article-grid .about-img-contain {
+        grid-area: about-img;
+    }
+    .article-grid .about-img {
+        width: 100%;
+        padding: 3em 10em;
+    }
+
+    /* GENERAL subs */
+    .container .title-section {
+        padding-bottom: 1.5em;
+    }
+    /*Vission-n-Mission SECTION*/
+    .vission-part {
+        padding-bottom: 20em;
+    }
+    .vission-part .title-section { 
+        text-align: left;
+    }
+    .vission-part .info-vision {
+        display: grid;
+        gap: 0em 3em;
+        grid-template-areas: "vision_img info";
+        align-items: center;
+    }
+    .vission-part .info-vision p {
+        grid-area: info; 
+        text-align: right;
+        padding: 0 0;
+    }
+    .vission-part .info-vision .vision-img-contain {
+        grid-area: vision_img;
+    }
+    .vission-part .info-vision img {
+        padding: 0 0em;
+
+    }
+
+    .mission-part .title-section {
+        text-align: right;
+    }
+    .mission-part .info-mission {
+        display: grid;
+        grid-template-areas: "info-m mission-img";
+        align-items: center;
+    }
+    .mission-part .info-mission p {
+        grid-area: info-m;
+    }
+    .mission-part .info-mission figure {
+        grid-area: mission-img;
+    }
+    .mission-part .info-mission img {
+        padding: 0 0em;
+    }
+
+
+    /*- Social Impact - Section -*/
+    .social-impact-section {
+        padding-top: 12em;
+    }    
+    .social-impact-section .sub-title {
+        margin: 2em 0;
+    }
+    .social-impact-section .social-p1 {
+        padding: 3em 7em;
+        font-size: 2em;
+    }
+
+    .social-impact-section .container {
+        display: grid;
+        grid-template-areas:
+            "img2 img2 s-p2"
+            "img2 img2 s-p2";
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+    .social-impact-section .container .social-p2 {
+        grid-area: s-p2;
+        font-size: 1.8em;
+    }
+    .social-impact-section .container .social-p2-2 {
+        display: none;
+    }
+    .social-impact-section .container .social-p2 span {
+        display: block;
+    }
+    .social-impact-section .container .img-impact2 {
+        grid-area: img2;
+        width: 100%;
+        padding: 0;
+    }
+
+    .special-social-p3 .social-p3 {
+        padding: 7em 3em;
+        font-size: 2.5em;
+    }
+
+}

@@ -34,7 +34,7 @@ h1 {
 
 .message{
     text-align: center;
-    font-size: 1em;
+    font-size: 2em;
      
     color: var(--blue-main);
 }
@@ -119,9 +119,9 @@ h1 {
 } 
 
 /*INFO*/
-.mform {
+/* .mform {
      
-}
+} */
 .form {
     height: 250px;
     display: inline-block;
@@ -136,7 +136,7 @@ h1 {
         font-size:24px;
     }
     .message{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     .form{

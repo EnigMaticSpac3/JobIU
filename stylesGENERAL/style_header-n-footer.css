@@ -83,7 +83,7 @@ header ul, ol, dl {
 /*Sign BTN*/
 .sign-btn a {
     text-align: center;
-    padding: .14em 1em;
+    padding: .2em .5em;
     border: .11rem var(--blue-main) solid;
     border-radius: .6rem;
     transition: all .3s ease;
