@@ -27,6 +27,7 @@
     display: inline;
 }
 
+
 /* other stuff belowe */
 .main{
     margin-top: 15%;
@@ -38,24 +39,24 @@
   .st4,.st6{
     fill:#fff;
     stroke:#b3dcdf;
-    stroke-miterlimit:10
+    stroke-miterlimit:10;
   }
   .st6{
     stroke:#5d89af;
-    stroke-width:2
+    stroke-width:2;
   }
   .st7,.st8,.st9{
     stroke:#709abf;
-    stroke-miterlimit:10
+    stroke-miterlimit:10;
   }
   
   .st7{
     stroke-width:5;
     stroke-linecap:round;
-    fill:none
+    fill: none;
   }
   .st8,.st9{
-    fill:#fff
+    fill:#fff;
   }
   .st9{
     fill:none
@@ -151,3 +152,25 @@
       75% { transform: translateX(3px); }
     100% { transform: translateX(-2px); }
   }
+
+@media screen and (max-width: 992px) {
+  .sometxt {
+    z-index: 999;
+    top: 25vh;
+    font-size: 1.5em;
+  }
+  .sometxt a {
+      padding: .5em 1em;
+      border: 2px solid var(--blue-sky);
+      border-radius: .6em;
+      color: var(--blue-main);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all .4s ease-in-out;
+  }
+  /* decoration stuff */
+  .main {
+    margin-top: 40vh;
+    transform: scale(1.2);
+  }
+}
