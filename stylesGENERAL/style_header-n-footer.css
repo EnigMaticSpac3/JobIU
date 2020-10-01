@@ -33,18 +33,18 @@ header {
     width: 100%;
     position: relative;
 }
-header .title { 
+header .main-title { 
     position: absolute;
     top: 1.3em;
     left: 50%;
     transform: translate(-50%, 0%);
     z-index: 1000;
 }
-header .title a {
+header .main-title a {
     font-size: 2.5em;
     /* font-weight: bold; */
 }
-header .title a:hover {
+header .main-title a:hover {
     color: var(--blue-main);
 }
 /*Links in the header*/
@@ -68,7 +68,161 @@ header a {
 /*fixing a weird stuff from the web*/
 header ul, ol, dl {
     margin-bottom: 0;
+}
+/* ----------------ALTERNATIVE MENU------------------- */
+@media screen and (max-width: 992px) {
+    /* cancelling the other menu */
+    header .main-title {
+        display: none;
+    }
+    .nav-menu {
+        display: none;
+    }
+    /*HEADER*/
+    .header-alt {
+        font-size: 1.2em;
+        width: 100%;
+        position: relative;
+    }
+    .header-alt .title { 
+        position: absolute;
+        top: 1.3em;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 1000;
+    }
+    .header-alt .title a {
+        font-size: 2.56em;
+        font-weight: lighter;
+    }
+    /*Links in the header*/
+    .header-alt a {
+        color: var(--blue-main);
+        font-size: 1.1rem;
+    }
+    /*Not showing the bigger nav*/
+    .nav-menu-big {
+        display: block;
+    }
+    .nav-menu-notshown {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* right: 0; */
+        padding: 7em 3em 1em;
+    }
+    /*Sign BTN*/
+    .sign-btn a {
+        text-align: center;
+        padding: .2em 1em;
+        border: 1.4px var(--blue-main) solid;
+        border-radius: 10px;
+        transition: all .3s ease;
+    }
+    .sign-btn a:hover {
+        background-color: var(--blue-main);
+        color: #fff;
+        border-color: var(--blue-main);
+    }
+    .menu-btn {
+        font-size: 2em;
+        cursor: pointer;
+    }
+    .menu-btn:focus {
+        transform: scale(.8);
+    }
 
+    /*NAVMENU*/
+    .nav-menu-mobile {
+        position: fixed;
+        top: 0;
+        left: 100%;
+        right: 0;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        padding: 1em 3.5em;
+        height: 100vh;
+        width: -50%;
+        background-color: #eee;
+        z-index: 1000;
+        overflow-y: scroll;
+        transition: all 1s ease-in-out;
+    }
+    .nav-menu-mobile .menu-title a {
+        font-size: 1.1em;
+        position: relative;
+        top: .5em;
+    }
+    .menu-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding-bottom: 5em;
+    }
+    .menu-list li {
+        padding: 4em 0 1em;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+    .menu-list li a {
+        color: var(--blue-main);
+    }
+    .nav-menu-mobile .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-menu-mobile .options a {
+        border-radius: .5em;
+        padding: .3em .7em;
+    }
+    .nav-menu-mobile .options a:nth-child(1) {
+        background-color: transparent;
+        border: 1px solid var(--blue-main);
+        transition: all .2s ease-out;
+    }
+    .nav-menu-mobile .options a:nth-child(1):hover {
+        background-color: var(--blue-main);
+        border: 1px solid transparent;
+        transform: scale(1.05);
+        color: #eee;
+    }
+    .nav-menu-mobile .options a:nth-child(2) {
+        background-color: var(--blue-main);
+        color: #eee;
+        transition: all .2s ease-out;
+    }
+    .nav-menu-mobile .options a:nth-child(2):hover {
+        background-color: transparent;
+        transform: scale(1.05);
+        color: var(--blue-main);
+        border: 1px solid var(--blue-main);
+    }
+
+    .nav-menu-mobile .menu-close {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-menu-mobile .menu-close img {
+        width: 13%;
+        padding-top: 4em;
+        cursor: pointer;
+    }
+    /*ACTIVE MENU*/
+    /* .nav-menu-mobile {
+    } */
+    /* .nav-menu-shown.active .menu-close {
+        display: flex;
+    } */
+    .nav-menu-shown .menu-close img {
+        display: block;
+        width: 40px;
+    }
 }
 
 /*search-section-Btn*/
@@ -173,7 +327,12 @@ footer {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
+    /* cancelling the ALT_menu */
+    .header-alt {
+        display: none;
+    }
+
     header .title a {
         font-size: 3.1em;
     }

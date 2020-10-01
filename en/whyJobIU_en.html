@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="../stylesGENERAL/stylefonts.css">
     <link rel="stylesheet" href="../stylesGENERAL/style_header-n-footer.css">
     <link rel="stylesheet" href="../Resources/Styles/whyJobIU_en.css">
-
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/b3ff63caad.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Nav-Menu -->
     <header>
-        <div class="title">
+        <div class="main-title">
             <a href="../../index.html">JobIU</a>
         </div>
         
@@ -35,6 +36,40 @@
                 </li>
                 <li><a href="companies/index.html">Businesses/Post Job</a></li>
             </ul>
+        </nav>
+    </header>
+    <header class="header-alt">
+        <div class="title subs-font">
+            <a href="./index.html">JobIU</a>
+        </div>
+        <nav class="nav-menu-container">
+            <div class="nav-menu-mobile">
+                <h3 class="menu-title">
+                    <a href="../index.html">JobIU</a>
+                </h3>
+                <ul class="menu-list">
+                    <li><a href="../es/index.html">INICIO</a></li>
+                    <li><a href="../es/PorqueJobIU_es.html">¿POR QUÉ JOBIU?</a></li>
+                    <li><a href="#">SOBRE NOSOTROS</a></li>
+                    <li><a href="./empresas/indexComp_es.html">JobIU EMPRESAS</a></li>
+                </ul>
+                <div class="options">
+                    <a href="../es/user/CrearCuenta_es.html">Crear Cuenta</a>
+                    <a href="../es/user/IniciarSesión_es.html">Iniciar Sesión</a>
+                </div>
+                <div class="menu-close">
+                    <img onclick="toggleNav()" src="../img/icons/close-x.svg" alt="close">
+                    <p>cerrar</p>
+                </div>
+            </div>
+            <div class="nav-menu-notshown">
+                <div class="sign-btn">
+                    <a href="user/IniciarSesión_es.html">
+                        Inicia Sesión
+                    </a>
+                </div>
+                <i onclick="toggleNav()" class="fas fa-bars menu-btn"></i>
+            </div>
         </nav>
     </header>
     <!-- Ends Nav-Menu -->
@@ -95,7 +130,7 @@
                 <p>We find the Job for you</p>
             </div>
             <ul class="footer-menu-options">
-                <li><a href="#">About Us</a></li>
+                <li><a href="../en/aboutus.html">About Us</a></li>
                 <li><a href="../en/companies/index.html">JobIU4Companies</a></li>
                 <li><a href="#">Contact</a></li>
                 <div class="btn-group dropup">
@@ -108,7 +143,7 @@
                             English
                             <img class="flag-language" src="../img/icons/languages/mini_flag-usa.png" alt="English">
                         </a>
-                        <a class="dropdown-item" href="../../es/whyJobIU/whyJobIU_es.html">
+                        <a class="dropdown-item" href="../es/PorqueJobIU_es.html">
                             Spanish
                             <img class="flag-language" src="../img/icons/languages/mini_flag-spain.png" alt="Spanish">
                         </a>
@@ -127,6 +162,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script src="../Resources/js/Aboutus/menu.js"></script>
 </body>
 </html>
